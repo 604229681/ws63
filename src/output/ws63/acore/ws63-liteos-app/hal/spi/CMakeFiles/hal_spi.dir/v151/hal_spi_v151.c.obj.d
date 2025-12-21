@@ -1,0 +1,35 @@
+hal/spi/CMakeFiles/hal_spi.dir/v151/hal_spi_v151.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/spi/v151/hal_spi_v151.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/platform/libsec/include/securec.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/platform/libsec/include/securectype.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/string.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/strings.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdlib.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/malloc.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/alloca.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdarg.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/generic/bits/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/include/common_def.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/spi/spi_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_definition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/spi/v151/hal_spi_v151_regs_def.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/dma/dma_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/dma.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/spi/v151/hal_spi_v151_regs_op.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/spi/v151/hal_spi_v151_regs_def.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/spi/v151/hal_spi_v151.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/spi/hal_spi.h

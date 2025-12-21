@@ -1,0 +1,28 @@
+drivers/chips/ws63/porting/sfc/driver/CMakeFiles/sfc_boot.dir/sfc.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/sfc/driver/sfc.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/libboundscheck/include/securec.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/libboundscheck/include/securectype.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/bits/reg.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/string.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/stdlib.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/alloca.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdarg.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/bits/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/tcxo.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/sfc/porting/../sfc_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/sfc/porting/../flash_config_info.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/sfc/porting/../sfc_protect.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/sfc/hal_sfc.h \
+ /home/hb/bearpi/fbb_ws63/src/include/common_def.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/interrupt/osal_interrupt.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/sfc.h

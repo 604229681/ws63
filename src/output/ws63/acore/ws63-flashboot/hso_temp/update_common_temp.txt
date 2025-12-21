@@ -1,0 +1,1 @@
+####/home/hb/bearpi/fbb_ws63/src/middleware/utils/update/common/upg_alloc.c,/home/hb/bearpi/fbb_ws63/src/middleware/utils/update/common/upg_common.c,/home/hb/bearpi/fbb_ws63/src/middleware/utils/update/common/upg_verify.c

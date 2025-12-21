@@ -1,0 +1,30 @@
+drivers/chips/ws63/boot/boot_porting/CMakeFiles/chip_boot_port.dir/reset/reset_porting.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/boot/boot_porting/reset/reset_porting.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/boot/boot_config/boot_init.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/watchdog.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_io.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/include/boot_serial.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/uart.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/uart/hal_uart.h \
+ /home/hb/bearpi/fbb_ws63/src/include/common_def.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/uart/uart_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/native/td_type.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_definition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/std_def.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product_fpga_standard.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/debug_print.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_irq.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/platform_types.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/tcxo.h

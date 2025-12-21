@@ -1,0 +1,36 @@
+kernel/osal_adapt/CMakeFiles/osal_adapt.dir/src/osal_adapt_task.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal_adapt/src/osal_adapt_task.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal_adapt/inc/osal_adapt.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/native/td_type.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/osal/osal_types.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/soc_osal.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/osal_list.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/osal_errno.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/atomic/osal_atomic.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/debug/osal_debug.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/interrupt/osal_interrupt.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/lock/osal_mutex.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_task.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/event/osal_event.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/msgqueue/osal_msgqueue.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/memory/osal_addr.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/memory/osal_barrier.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/device/osal_device.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_wait.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/fileops/osal_fileops.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/math/osal_math.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/proc/osal_proc.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/osal_list.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/semaphore/osal_semaphore.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/lock/osal_spinlock.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/string/osal_string.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/time/osal_timer.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_wait.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_workqueue.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/memory/osal_cache.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_completion.h

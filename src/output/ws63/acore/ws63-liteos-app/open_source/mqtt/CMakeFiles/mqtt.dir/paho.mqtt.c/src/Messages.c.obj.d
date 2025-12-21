@@ -1,0 +1,20 @@
+open_source/mqtt/CMakeFiles/mqtt.dir/paho.mqtt.c/src/Messages.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/Messages.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/Messages.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/Log.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/CMSIS/CMSIS/RTOS2/Include/cmsis_os2.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdlib.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/malloc.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/alloca.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/string.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/strings.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/Heap.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTExportDeclarations.h

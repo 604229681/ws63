@@ -1,0 +1,32 @@
+{
+    "files.associations": {
+        "sio_porting.h": "c",
+        "cstring": "c",
+        "rope": "c",
+        "string.h": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "slist": "c",
+        "initializer_list": "c",
+        "regex": "c",
+        "utility": "c",
+        "valarray": "c",
+        "format": "c",
+        "ranges": "c",
+        "span": "c",
+        "stacktrace": "c",
+        "cmsis_os2.h": "c",
+        "pinctrl.h": "c",
+        "i2s.h": "c",
+        "app_init.h": "c",
+        "securec.h": "c",
+        "opus.h": "c",
+        "config.h": "c",
+        "gpio.h": "c",
+        "watchdog.h": "c",
+        "cstdint": "c",
+        "random": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/hb/bearpi/fbb_ws63/src"
+}

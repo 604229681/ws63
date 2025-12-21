@@ -1,0 +1,25 @@
+utils/update/common/CMakeFiles/update_common.dir/upg_alloc.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/update/common/upg_alloc.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-flashboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/include/common_def.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/update/inner_include/upg_common.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/utils/partition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/partition/include/partition_resource_id.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/utils/upg.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/update/local_update/../include/upg_definitions_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/update/inner_include/upg_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/update/local_update/../include/upg_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/bits/reg.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/update/inner_include/upg_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/update/local_update/../include/upg_common_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/linker/flashboot_linker/memory_config.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/update/local_update/../include/upg_definitions_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/update/inner_include/upg_alloc.h

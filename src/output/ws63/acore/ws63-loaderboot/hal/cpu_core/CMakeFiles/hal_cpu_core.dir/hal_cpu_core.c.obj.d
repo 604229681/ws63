@@ -1,0 +1,13 @@
+hal/cpu_core/CMakeFiles/hal_cpu_core.dir/hal_cpu_core.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/cpu_core/hal_cpu_core.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/cpu_core/hal_cpu_core.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_definition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_io.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h

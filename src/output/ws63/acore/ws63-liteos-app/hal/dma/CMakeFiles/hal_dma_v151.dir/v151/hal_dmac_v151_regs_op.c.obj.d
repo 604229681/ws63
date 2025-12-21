@@ -1,0 +1,30 @@
+hal/dma/CMakeFiles/hal_dma_v151.dir/v151/hal_dmac_v151_regs_op.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/dma/v151/hal_dmac_v151_regs_op.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/dma/v151/hal_dmac_v151_regs_op.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/include/common_def.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/dma/v151/hal_dmac_v151_regs_def.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/dma/dma_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/include/driver/dma.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/debug_print.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_definition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_irq.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/std_def.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/kernel/include/los_typedef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/kernel/include/los_builddef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/kernel/include/los_toolchain.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product_fpga_standard.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/platform_types.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h

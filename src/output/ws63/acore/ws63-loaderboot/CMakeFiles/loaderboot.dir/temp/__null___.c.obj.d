@@ -1,0 +1,2 @@
+CMakeFiles/loaderboot.dir/temp/__null___.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/temp/__null___.c

@@ -1,0 +1,26 @@
+drivers/chips/ws63/porting/pinctrl/CMakeFiles/pinctrl_port_ws63.dir/pinctrl_porting_ws63.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/pinctrl/pinctrl_porting_ws63.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-flashboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/pinctrl/pinctrl_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/libboundscheck/include/securec.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/libboundscheck/include/securectype.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/bits/reg.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/string.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/stdlib.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/alloca.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdarg.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/sysroot/usr/include/bits/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_io.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/pinmux/common/hal_pinctrl.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/pinctrl/pinctrl_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/drivers/hal/pinmux/ws63/hal_pinctrl_ws63.h

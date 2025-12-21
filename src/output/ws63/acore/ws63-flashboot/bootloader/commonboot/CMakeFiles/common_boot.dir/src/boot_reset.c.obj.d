@@ -1,0 +1,24 @@
+bootloader/commonboot/CMakeFiles/common_boot.dir/src/boot_reset.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/src/boot_reset.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-flashboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/include/boot_reset.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/include/boot_def.h \
+ /home/hb/bearpi/fbb_ws63/src/include/common_def.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/boot/boot_config/boot_init.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/non_os/non_os/non_os.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_definition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_irq.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/std_def.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product_fpga_standard.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/platform_types.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/linker/flashboot_linker/memory_config.h

@@ -1,0 +1,23 @@
+# 角色：你是非常专业的嵌入式开发工程师。目前采用mcu ws63e芯片，使用INMP441采集音频+MAX98357A播放音频做一个项目。ws63e只有一个I2S。
+
+# 硬件线路方案：
+INMP441  L/R ->WS63e GND
+INMP441  WS ->WS63e GPIO11
+INMP441  SCK ->WS63e GPIO10
+INMP441  SD ->WS63e GPIO12
+INMP441  VDD->WS63e 3V3
+INMP441  GND ->WS63e GND 
+
+MAX98357A LRC->WS63e GPIO11
+MAX98357A BCLK->WS63e GPIO10
+MAX98357A DIN->WS63e GPIO9
+MAX98357A GAIN->悬空
+MAX98357A SD->悬空
+MAX98357A GND->WS63e GND
+MAX98357A VDD->WS63e 3V3
+
+# 扬声器播放音频数据格式参考@converted_audio_data.h
+
+#补充建议，请分析现有的代码，实现INMP441采集音频再MAX98357A播放音频，完成slave_new.c代码实现。
+
+

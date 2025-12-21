@@ -1,0 +1,25 @@
+drivers/chips/ws63/CMakeFiles/chip_ws63.dir/arch/riscv/riscv31/interrupt_handler.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/arch/riscv/riscv31/interrupt_handler.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/arch/riscv/riscv31/interrupt_handler.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/vectors/vectors.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_definition.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_irq.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/std_def.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/bootloader/commonboot/libc/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/memory_config/include/product/product_fpga_standard.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/platform_types.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/utils/common_headers/chip_definitions.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/arch/riscv/include/interrupt_porting.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/arch/riscv/arch_port.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/chip_core_irq.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/boards/ws63/evb/linker/loaderboot_linker/memory_config.h \
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/arch/riscv/riscv31/arch_encoding.h

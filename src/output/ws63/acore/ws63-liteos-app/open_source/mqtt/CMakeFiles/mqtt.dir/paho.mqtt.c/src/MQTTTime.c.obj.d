@@ -1,0 +1,26 @@
+open_source/mqtt/CMakeFiles/mqtt.dir/paho.mqtt.c/src/MQTTTime.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTTime.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTTime.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/sys/time.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/sys/types.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/endian.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/sys/select.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/StackTrace.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/Log.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/CMSIS/CMSIS/RTOS2/Include/cmsis_os2.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/Thread.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTExportDeclarations.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTClient.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTProperties.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTReasonCodes.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/MQTTSubscribeOpts.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/mqtt/paho.mqtt.c/src/mutex_type.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/time.h
