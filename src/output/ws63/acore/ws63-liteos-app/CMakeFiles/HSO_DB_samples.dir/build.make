@@ -68,7 +68,9 @@ include CMakeFiles/HSO_DB_samples.dir/progress.make
 
 CMakeFiles/HSO_DB_samples: hso_temp/samples.txt
 
-hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/helloworld/slave_new.c
+hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c
+hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c
+hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c
 hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/dfx/include/log_def_bt.h
 hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/dfx/include/log_def_dsp.h
 hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/dfx/include/log_def_pf.h

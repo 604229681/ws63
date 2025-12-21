@@ -1,4 +1,4 @@
-# Install script for directory: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/helloworld
+# Install script for directory: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

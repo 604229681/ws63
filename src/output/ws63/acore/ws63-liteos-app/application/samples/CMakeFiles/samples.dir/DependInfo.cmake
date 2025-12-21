@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/helloworld/slave_new.c" "application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj" "gcc" "application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj.d"
+  "/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c" "application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj" "gcc" "application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj.d"
+  "/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c" "application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj" "gcc" "application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj.d"
+  "/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c" "application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj" "gcc" "application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

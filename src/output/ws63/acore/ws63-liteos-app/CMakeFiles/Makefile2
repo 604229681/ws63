@@ -277,31 +277,31 @@ application/samples/clean: application/samples/peripheral/clean
 # Directory level rules for directory application/samples/peripheral
 
 # Recursive "all" directory target.
-application/samples/peripheral/all: application/samples/peripheral/helloworld/all
+application/samples/peripheral/all: application/samples/peripheral/INMP441/all
 .PHONY : application/samples/peripheral/all
 
 # Recursive "preinstall" directory target.
-application/samples/peripheral/preinstall: application/samples/peripheral/helloworld/preinstall
+application/samples/peripheral/preinstall: application/samples/peripheral/INMP441/preinstall
 .PHONY : application/samples/peripheral/preinstall
 
 # Recursive "clean" directory target.
-application/samples/peripheral/clean: application/samples/peripheral/helloworld/clean
+application/samples/peripheral/clean: application/samples/peripheral/INMP441/clean
 .PHONY : application/samples/peripheral/clean
 
 #=============================================================================
-# Directory level rules for directory application/samples/peripheral/helloworld
+# Directory level rules for directory application/samples/peripheral/INMP441
 
 # Recursive "all" directory target.
-application/samples/peripheral/helloworld/all:
-.PHONY : application/samples/peripheral/helloworld/all
+application/samples/peripheral/INMP441/all:
+.PHONY : application/samples/peripheral/INMP441/all
 
 # Recursive "preinstall" directory target.
-application/samples/peripheral/helloworld/preinstall:
-.PHONY : application/samples/peripheral/helloworld/preinstall
+application/samples/peripheral/INMP441/preinstall:
+.PHONY : application/samples/peripheral/INMP441/preinstall
 
 # Recursive "clean" directory target.
-application/samples/peripheral/helloworld/clean:
-.PHONY : application/samples/peripheral/helloworld/clean
+application/samples/peripheral/INMP441/clean:
+.PHONY : application/samples/peripheral/INMP441/clean
 
 #=============================================================================
 # Directory level rules for directory application/ws63
@@ -8200,12 +8200,12 @@ application/ws63/ws63_liteos_application/CMakeFiles/ws63_liteos_app.dir/clean:
 kernel/non_os/non_os/CMakeFiles/non_os.dir/all:
 	$(MAKE) $(MAKESILENT) -f kernel/non_os/non_os/CMakeFiles/non_os.dir/build.make kernel/non_os/non_os/CMakeFiles/non_os.dir/depend
 	$(MAKE) $(MAKESILENT) -f kernel/non_os/non_os/CMakeFiles/non_os.dir/build.make kernel/non_os/non_os/CMakeFiles/non_os.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=64 "Built target non_os"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target non_os"
 .PHONY : kernel/non_os/non_os/CMakeFiles/non_os.dir/all
 
 # Build rule for subdir invocation for target.
 kernel/non_os/non_os/CMakeFiles/non_os.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/non_os/non_os/CMakeFiles/non_os.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : kernel/non_os/non_os/CMakeFiles/non_os.dir/rule
@@ -8226,12 +8226,12 @@ kernel/non_os/non_os/CMakeFiles/non_os.dir/clean:
 kernel/osal/CMakeFiles/osal.dir/all:
 	$(MAKE) $(MAKESILENT) -f kernel/osal/CMakeFiles/osal.dir/build.make kernel/osal/CMakeFiles/osal.dir/depend
 	$(MAKE) $(MAKESILENT) -f kernel/osal/CMakeFiles/osal.dir/build.make kernel/osal/CMakeFiles/osal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=81,82 "Built target osal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=80,81,82 "Built target osal"
 .PHONY : kernel/osal/CMakeFiles/osal.dir/all
 
 # Build rule for subdir invocation for target.
 kernel/osal/CMakeFiles/osal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kernel/osal/CMakeFiles/osal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : kernel/osal/CMakeFiles/osal.dir/rule
@@ -8304,12 +8304,12 @@ driver/adc/CMakeFiles/adc.dir/clean:
 driver/dma/CMakeFiles/dma.dir/all:
 	$(MAKE) $(MAKESILENT) -f driver/dma/CMakeFiles/dma.dir/build.make driver/dma/CMakeFiles/dma.dir/depend
 	$(MAKE) $(MAKESILENT) -f driver/dma/CMakeFiles/dma.dir/build.make driver/dma/CMakeFiles/dma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=23 "Built target dma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target dma"
 .PHONY : driver/dma/CMakeFiles/dma.dir/all
 
 # Build rule for subdir invocation for target.
 driver/dma/CMakeFiles/dma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 driver/dma/CMakeFiles/dma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : driver/dma/CMakeFiles/dma.dir/rule
@@ -8330,12 +8330,12 @@ driver/dma/CMakeFiles/dma.dir/clean:
 driver/gpio/CMakeFiles/gpio.dir/all:
 	$(MAKE) $(MAKESILENT) -f driver/gpio/CMakeFiles/gpio.dir/build.make driver/gpio/CMakeFiles/gpio.dir/depend
 	$(MAKE) $(MAKESILENT) -f driver/gpio/CMakeFiles/gpio.dir/build.make driver/gpio/CMakeFiles/gpio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=28 "Built target gpio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target gpio"
 .PHONY : driver/gpio/CMakeFiles/gpio.dir/all
 
 # Build rule for subdir invocation for target.
 driver/gpio/CMakeFiles/gpio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 driver/gpio/CMakeFiles/gpio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : driver/gpio/CMakeFiles/gpio.dir/rule
@@ -8356,12 +8356,12 @@ driver/gpio/CMakeFiles/gpio.dir/clean:
 driver/i2c/CMakeFiles/i2c.dir/all:
 	$(MAKE) $(MAKESILENT) -f driver/i2c/CMakeFiles/i2c.dir/build.make driver/i2c/CMakeFiles/i2c.dir/depend
 	$(MAKE) $(MAKESILENT) -f driver/i2c/CMakeFiles/i2c.dir/build.make driver/i2c/CMakeFiles/i2c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target i2c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=35 "Built target i2c"
 .PHONY : driver/i2c/CMakeFiles/i2c.dir/all
 
 # Build rule for subdir invocation for target.
 driver/i2c/CMakeFiles/i2c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 driver/i2c/CMakeFiles/i2c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : driver/i2c/CMakeFiles/i2c.dir/rule
@@ -8590,12 +8590,12 @@ driver/uart/CMakeFiles/uart.dir/clean:
 driver/efuse/CMakeFiles/efuse.dir/all:
 	$(MAKE) $(MAKESILENT) -f driver/efuse/CMakeFiles/efuse.dir/build.make driver/efuse/CMakeFiles/efuse.dir/depend
 	$(MAKE) $(MAKESILENT) -f driver/efuse/CMakeFiles/efuse.dir/build.make driver/efuse/CMakeFiles/efuse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target efuse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=27 "Built target efuse"
 .PHONY : driver/efuse/CMakeFiles/efuse.dir/all
 
 # Build rule for subdir invocation for target.
 driver/efuse/CMakeFiles/efuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 driver/efuse/CMakeFiles/efuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : driver/efuse/CMakeFiles/efuse.dir/rule
@@ -8928,12 +8928,12 @@ hal/spi/CMakeFiles/hal_spi.dir/clean:
 hal/uart/CMakeFiles/hal_uart.dir/all:
 	$(MAKE) $(MAKESILENT) -f hal/uart/CMakeFiles/hal_uart.dir/build.make hal/uart/CMakeFiles/hal_uart.dir/depend
 	$(MAKE) $(MAKESILENT) -f hal/uart/CMakeFiles/hal_uart.dir/build.make hal/uart/CMakeFiles/hal_uart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=35 "Built target hal_uart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target hal_uart"
 .PHONY : hal/uart/CMakeFiles/hal_uart.dir/all
 
 # Build rule for subdir invocation for target.
 hal/uart/CMakeFiles/hal_uart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hal/uart/CMakeFiles/hal_uart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : hal/uart/CMakeFiles/hal_uart.dir/rule
@@ -9084,12 +9084,12 @@ drivers/chips/ws63/porting/arch/CMakeFiles/pmp_cfg_ws63.dir/clean:
 drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/all:
 	$(MAKE) $(MAKESILENT) -f drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/build.make drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/depend
 	$(MAKE) $(MAKESILENT) -f drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/build.make drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target gpio_port"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=28 "Built target gpio_port"
 .PHONY : drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/all
 
 # Build rule for subdir invocation for target.
 drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : drivers/chips/ws63/porting/gpio/CMakeFiles/gpio_port.dir/rule
@@ -9240,12 +9240,12 @@ drivers/chips/ws63/porting/i2c/CMakeFiles/i2c_porting.dir/clean:
 drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/all:
 	$(MAKE) $(MAKESILENT) -f drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/build.make drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/depend
 	$(MAKE) $(MAKESILENT) -f drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/build.make drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target dma_port"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=23 "Built target dma_port"
 .PHONY : drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/all
 
 # Build rule for subdir invocation for target.
 drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : drivers/chips/ws63/porting/dma/CMakeFiles/dma_port.dir/rule
@@ -9552,12 +9552,12 @@ drivers/chips/ws63/porting/xo_trim/CMakeFiles/xo_trim_port.dir/clean:
 drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/all:
 	$(MAKE) $(MAKESILENT) -f drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/build.make drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/depend
 	$(MAKE) $(MAKESILENT) -f drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/build.make drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=27 "Built target dyn_mem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target dyn_mem"
 .PHONY : drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/all
 
 # Build rule for subdir invocation for target.
 drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : drivers/chips/ws63/dyn_mem/CMakeFiles/dyn_mem.dir/rule
@@ -9916,12 +9916,12 @@ utils/algorithm/CMakeFiles/algorithm.dir/clean:
 utils/app_init/CMakeFiles/app_init.dir/all:
 	$(MAKE) $(MAKESILENT) -f utils/app_init/CMakeFiles/app_init.dir/build.make utils/app_init/CMakeFiles/app_init.dir/depend
 	$(MAKE) $(MAKESILENT) -f utils/app_init/CMakeFiles/app_init.dir/build.make utils/app_init/CMakeFiles/app_init.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=11 "Built target app_init"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target app_init"
 .PHONY : utils/app_init/CMakeFiles/app_init.dir/all
 
 # Build rule for subdir invocation for target.
 utils/app_init/CMakeFiles/app_init.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/app_init/CMakeFiles/app_init.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : utils/app_init/CMakeFiles/app_init.dir/rule
@@ -9942,12 +9942,12 @@ utils/app_init/CMakeFiles/app_init.dir/clean:
 utils/at/at/CMakeFiles/at.dir/all:
 	$(MAKE) $(MAKESILENT) -f utils/at/at/CMakeFiles/at.dir/build.make utils/at/at/CMakeFiles/at.dir/depend
 	$(MAKE) $(MAKESILENT) -f utils/at/at/CMakeFiles/at.dir/build.make utils/at/at/CMakeFiles/at.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num= "Built target at"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=11 "Built target at"
 .PHONY : utils/at/at/CMakeFiles/at.dir/all
 
 # Build rule for subdir invocation for target.
 utils/at/at/CMakeFiles/at.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/at/at/CMakeFiles/at.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : utils/at/at/CMakeFiles/at.dir/rule
@@ -10306,12 +10306,12 @@ utils/dfx/diag_dfx_cmd/CMakeFiles/diag_dfx_cmd.dir/clean:
 utils/nv/CMakeFiles/nv.dir/all:
 	$(MAKE) $(MAKESILENT) -f utils/nv/CMakeFiles/nv.dir/build.make utils/nv/CMakeFiles/nv.dir/depend
 	$(MAKE) $(MAKESILENT) -f utils/nv/CMakeFiles/nv.dir/build.make utils/nv/CMakeFiles/nv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=65 "Built target nv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=64,65 "Built target nv"
 .PHONY : utils/nv/CMakeFiles/nv.dir/all
 
 # Build rule for subdir invocation for target.
 utils/nv/CMakeFiles/nv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils/nv/CMakeFiles/nv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : utils/nv/CMakeFiles/nv.dir/rule
@@ -10488,12 +10488,12 @@ open_source/mqtt/CMakeFiles/mqtt.dir/clean:
 open_source/opus/CMakeFiles/opus.dir/all:
 	$(MAKE) $(MAKESILENT) -f open_source/opus/CMakeFiles/opus.dir/build.make open_source/opus/CMakeFiles/opus.dir/depend
 	$(MAKE) $(MAKESILENT) -f open_source/opus/CMakeFiles/opus.dir/build.make open_source/opus/CMakeFiles/opus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target opus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target opus"
 .PHONY : open_source/opus/CMakeFiles/opus.dir/all
 
 # Build rule for subdir invocation for target.
 open_source/opus/CMakeFiles/opus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 open_source/opus/CMakeFiles/opus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : open_source/opus/CMakeFiles/opus.dir/rule

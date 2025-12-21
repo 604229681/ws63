@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj"
-  "CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj.d"
+  "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj"
+  "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj.d"
+  "CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj"
+  "CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj.d"
+  "CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj"
+  "CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj.d"
   "libsamples.a"
   "libsamples.pdb"
 )

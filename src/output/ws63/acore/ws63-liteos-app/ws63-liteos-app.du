@@ -1124,7 +1124,7 @@
 22      ./.plat_text_flash/middleware/utils/dfx/zdiag/zdiag_filter.c/zdiag_state_beat_heart_pkt_recv
 20      ./.plat_text_flash/middleware/utils/dfx/zdiag/zdiag_filter.c/zdiag_state_get_last_recv_time
 0       ./startup/application/ws63/ws63_liteos_application/reset_vector.S/HandleReset
-4       ./startup/application/samples/peripheral/helloworld/slave_new.c/__zinitcall_run_i2s_entry
+4       ./startup/application/samples/peripheral/INMP441/INMP441.c/__zinitcall_run_i2s_entry
 22      ./startup/application/ws63/ws63_liteos_application/main.c/copy_bin_to_ram
 198     ./startup/application/ws63/ws63_liteos_application/main.c/do_relocation
 90      ./startup/drivers/chips/ws63/dyn_mem/dyn_mem.c/dyn_mem_cfg
@@ -4757,6 +4757,7 @@
 8       ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_is_wifi_inited
 212     ./.wifi_text_flash/middleware/services/wifi_service/wpa/liteos_wpa_api/wifi_api.c/wifi_new_task_event_cb
 10      ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_register_csi_report_cb
+160     ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_register_event_cb
 90      ./.wifi_text_flash/middleware/services/wifi_service/wpa/liteos_wpa_api/wifi_api.c/wifi_remove_iface
 256     ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_save_scan_info
 852     ./.wifi_text_flash/middleware/services/wifi_service/wpa/liteos_wpa_api/wifi_api.c/wifi_scan
@@ -4794,7 +4795,7 @@
 112     ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_disable
 56      ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_disconnect
 88      ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_enable
-212     ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_fast_connect
+214     ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_fast_connect
 190     ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_get_ap_info
 4       ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_get_protocol_mode
 40      ./.wifi_text_flash/middleware/services/wifi_service/service/soc_wifi_service_api.c/wifi_sta_get_scan_info
@@ -5603,6 +5604,16 @@
 4       ./.plat_bss_flash/middleware/utils/nv/nv_storage_app/soc_nv_storage_handle.c/nv_sem
 8       ./.plat_bss_flash/application/ws63/ws63_liteos_application/main.c/systick_count1
 8       ./.plat_bss_flash/application/ws63/ws63_liteos_application/main.c/tcxo_count1
+92      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_close
+162     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_init
+248     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_send
+46      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/generate_mask_key
+582     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_audio_task
+40      ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_entry
+154     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/websocket_handshake
+600     ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_connect_to_hotspot
+52      ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_connection_callback
+24      ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_scan_callback
 66      ./.text/drivers/drivers/hal/security_unified/hal_cipher/pke/hal_pke.c/check_instr_rdy
 160     ./.text/drivers/chips/ws63/porting/xo_trim/xo_trim_porting.c/cmu_xo_trim_init
 158     ./.text/drivers/chips/ws63/porting/xo_trim/xo_trim_porting.c/cmu_xo_trim_temp_comp_init
@@ -6465,10 +6476,12 @@
 32      ./.data/drivers/drivers/hal/security_unified/hal_cipher/spacc/hal_symc.c/g_symc_key_length_table
 1       ./.data/drivers/drivers/driver/security_unified/init/cfbb/os/crypto_drv_init.c/g_wait_func_enable
 168     ./.data/drivers/drivers/driver/security_unified/mbedtls_harden_adapt/mbedtls_harden_adapt.c/harden_cipher_func
-4       ./.bth_bss_flash/application/samples/peripheral/helloworld/slave_new.c/g_frame_count
-1       ./.bth_bss_flash/application/samples/peripheral/helloworld/slave_new.c/g_is_recording
-16384   ./.bth_bss_flash/application/samples/peripheral/helloworld/slave_new.c/g_rx_buffer
-16384   ./.bth_bss_flash/application/samples/peripheral/helloworld/slave_new.c/g_tx_buffer
+4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_frame_count
+1       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_is_recording
+16384   ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rx_buffer
+16384   ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_tx_buffer
+4       ./.bth_bss_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/g_wifi_connected
+1       ./.bth_bss_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/g_wifi_state
 252     ./.preserve/middleware/utils/dfx/preserve/private/preserve.c/g_preserve_data_lib
 4       ./.plat_bss_sram/drivers/chips/ws63/porting/sfc/porting/sfc_porting.c/g_sfc_mutex
 1       ./.plat_bss_sram/drivers/chips/ws63/porting/sfc/porting/sfc_porting.c/g_sfc_mutex_inited
@@ -6528,8 +6541,7 @@
 70      ./.plat_text_sram/drivers/chips/ws63/porting/sfc/porting/sfc_protect.c/sfc_port_write_lock
 128     ./.plat_text_sram/drivers/chips/ws63/porting/sfc/porting/sfc_protect.c/sfc_port_write_sr
 30      ./.plat_text_sram/drivers/chips/ws63/porting/sfc/porting/sfc_protect.c/sfc_port_write_unlock
-496     ./.bth_text_flash/application/samples/peripheral/helloworld/slave_new.c/i2s_audio_task
-40      ./.bth_text_flash/application/samples/peripheral/helloworld/slave_new.c/i2s_entry
 788     ./.patch/application/ws63/ws63_liteos_application/main.c/patch_cmp
 1552    ./.patch/application/ws63/ws63_liteos_application/main.c/patch_remap
-done. Lines: 18168, Matches: 6534
+4       ./.bth_data_flash/application/samples/peripheral/INMP441/audiowebsocket.c/ws_socket
+done. Lines: 18183, Matches: 6546

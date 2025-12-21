@@ -428,7 +428,17 @@ CONFIG_SPI_NOT_SUPPORT_TEXAS_FORMAT=y
 CONFIG_SPI_USING_V151=y
 # end of SPI Configuration
 
-# CONFIG_DRIVER_SUPPORT_SSI is not set
+CONFIG_DRIVER_SUPPORT_SSI=y
+
+#
+# SSI Configuration
+#
+
+#
+# Config SSI
+#
+# end of SSI Configuration
+
 # CONFIG_DRIVER_SUPPORT_SYSTICK is not set
 # CONFIG_DRIVER_SUPPORT_TCXO is not set
 # CONFIG_DRIVER_SUPPORT_TIMER is not set

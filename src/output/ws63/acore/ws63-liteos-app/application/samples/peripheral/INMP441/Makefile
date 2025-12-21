@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/helloworld//CMakeFiles/progress.marks
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/helloworld/all
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/INMP441//CMakeFiles/progress.marks
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/INMP441/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/helloworld/clean
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/INMP441/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/helloworld/preinstall
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/INMP441/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/helloworld/preinstall
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/samples/peripheral/INMP441/preinstall
 .PHONY : preinstall/fast
 
 # clear depends

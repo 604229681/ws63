@@ -1,5 +1,5 @@
-application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj: \
- /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/helloworld/slave_new.c \
+application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c \
  /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
  /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
  /home/hb/bearpi/fbb_ws63/src/include/driver/i2s.h \
@@ -63,4 +63,6 @@ application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdarg.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/errno.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/generic/bits/errno.h \
- /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h
+ /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.h \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.h

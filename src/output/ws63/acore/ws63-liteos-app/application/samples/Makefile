@@ -130,29 +130,77 @@ samples/fast:
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/build
 .PHONY : samples/fast
 
-peripheral/helloworld/slave_new.obj: peripheral/helloworld/slave_new.c.obj
-.PHONY : peripheral/helloworld/slave_new.obj
+peripheral/INMP441/INMP441.obj: peripheral/INMP441/INMP441.c.obj
+.PHONY : peripheral/INMP441/INMP441.obj
 
 # target to build an object file
-peripheral/helloworld/slave_new.c.obj:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.obj
-.PHONY : peripheral/helloworld/slave_new.c.obj
+peripheral/INMP441/INMP441.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj
+.PHONY : peripheral/INMP441/INMP441.c.obj
 
-peripheral/helloworld/slave_new.i: peripheral/helloworld/slave_new.c.i
-.PHONY : peripheral/helloworld/slave_new.i
+peripheral/INMP441/INMP441.i: peripheral/INMP441/INMP441.c.i
+.PHONY : peripheral/INMP441/INMP441.i
 
 # target to preprocess a source file
-peripheral/helloworld/slave_new.c.i:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.i
-.PHONY : peripheral/helloworld/slave_new.c.i
+peripheral/INMP441/INMP441.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.i
+.PHONY : peripheral/INMP441/INMP441.c.i
 
-peripheral/helloworld/slave_new.s: peripheral/helloworld/slave_new.c.s
-.PHONY : peripheral/helloworld/slave_new.s
+peripheral/INMP441/INMP441.s: peripheral/INMP441/INMP441.c.s
+.PHONY : peripheral/INMP441/INMP441.s
 
 # target to generate assembly for a file
-peripheral/helloworld/slave_new.c.s:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/helloworld/slave_new.c.s
-.PHONY : peripheral/helloworld/slave_new.c.s
+peripheral/INMP441/INMP441.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.s
+.PHONY : peripheral/INMP441/INMP441.c.s
+
+peripheral/INMP441/audiowebsocket.obj: peripheral/INMP441/audiowebsocket.c.obj
+.PHONY : peripheral/INMP441/audiowebsocket.obj
+
+# target to build an object file
+peripheral/INMP441/audiowebsocket.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj
+.PHONY : peripheral/INMP441/audiowebsocket.c.obj
+
+peripheral/INMP441/audiowebsocket.i: peripheral/INMP441/audiowebsocket.c.i
+.PHONY : peripheral/INMP441/audiowebsocket.i
+
+# target to preprocess a source file
+peripheral/INMP441/audiowebsocket.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.i
+.PHONY : peripheral/INMP441/audiowebsocket.c.i
+
+peripheral/INMP441/audiowebsocket.s: peripheral/INMP441/audiowebsocket.c.s
+.PHONY : peripheral/INMP441/audiowebsocket.s
+
+# target to generate assembly for a file
+peripheral/INMP441/audiowebsocket.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.s
+.PHONY : peripheral/INMP441/audiowebsocket.c.s
+
+peripheral/INMP441/wlan_hotspot.obj: peripheral/INMP441/wlan_hotspot.c.obj
+.PHONY : peripheral/INMP441/wlan_hotspot.obj
+
+# target to build an object file
+peripheral/INMP441/wlan_hotspot.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj
+.PHONY : peripheral/INMP441/wlan_hotspot.c.obj
+
+peripheral/INMP441/wlan_hotspot.i: peripheral/INMP441/wlan_hotspot.c.i
+.PHONY : peripheral/INMP441/wlan_hotspot.i
+
+# target to preprocess a source file
+peripheral/INMP441/wlan_hotspot.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.i
+.PHONY : peripheral/INMP441/wlan_hotspot.c.i
+
+peripheral/INMP441/wlan_hotspot.s: peripheral/INMP441/wlan_hotspot.c.s
+.PHONY : peripheral/INMP441/wlan_hotspot.s
+
+# target to generate assembly for a file
+peripheral/INMP441/wlan_hotspot.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.s
+.PHONY : peripheral/INMP441/wlan_hotspot.c.s
 
 # Help Target
 help:
@@ -163,9 +211,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... samples"
-	@echo "... peripheral/helloworld/slave_new.obj"
-	@echo "... peripheral/helloworld/slave_new.i"
-	@echo "... peripheral/helloworld/slave_new.s"
+	@echo "... peripheral/INMP441/INMP441.obj"
+	@echo "... peripheral/INMP441/INMP441.i"
+	@echo "... peripheral/INMP441/INMP441.s"
+	@echo "... peripheral/INMP441/audiowebsocket.obj"
+	@echo "... peripheral/INMP441/audiowebsocket.i"
+	@echo "... peripheral/INMP441/audiowebsocket.s"
+	@echo "... peripheral/INMP441/wlan_hotspot.obj"
+	@echo "... peripheral/INMP441/wlan_hotspot.i"
+	@echo "... peripheral/INMP441/wlan_hotspot.s"
 .PHONY : help
 
 

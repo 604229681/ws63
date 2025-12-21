@@ -132,8 +132,8 @@
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/CMakeFiles/rebuild_cache.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/helloworld/CMakeFiles/edit_cache.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/helloworld/CMakeFiles/rebuild_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/INMP441/CMakeFiles/edit_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/INMP441/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/ws63/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/ws63/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/ws63/ws63_liteos_application/CMakeFiles/ws63_liteos_app.dir
