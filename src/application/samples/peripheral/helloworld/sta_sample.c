@@ -62,6 +62,7 @@ static td_void wifi_scan_state_changed(td_s32 state, td_s32 size)
 {
     UNUSED(state);
     UNUSED(size);
+
     PRINT("**************===========%s::Scan done!.\r\n", WIFI_STA_SAMPLE_LOG);
     g_wifi_state = WIFI_STA_SAMPLE_SCAN_DONE;
     return;

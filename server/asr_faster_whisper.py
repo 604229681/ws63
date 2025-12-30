@@ -2,6 +2,11 @@
 import os
 import sys
 import glob
+
+# Suppress the symlink warning from huggingface_hub on Windows
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+
+# Import faster_whisper after setting the env var
 from faster_whisper import WhisperModel
 
 def get_latest_wav():
@@ -14,25 +19,24 @@ def get_latest_wav():
 def transcribe_audio(audio_file, model_size="small", device="cpu", compute_type="int8"):
     """
     Transcribe audio file using faster-whisper.
-    
-    Args:
-        audio_file (str): Path to audio file.
-        model_size (str): Model size (tiny, base, small, medium, large-v2, large-v3).
-        device (str): Device to run on (cpu, cuda).
-        compute_type (str): Quantization (int8, float16, int8_float16).
+    Returns the transcribed text string.
     """
     if not os.path.exists(audio_file):
         print(f"Error: File '{audio_file}' not found.")
-        return
+        return ""
 
     print(f"Loading model '{model_size}' on {device} with {compute_type}...")
+    print(f"-> Please wait. If this is the first run, the model (~500MB) is being downloaded.")
+    
     try:
         model = WhisperModel(model_size, device=device, compute_type=compute_type)
     except Exception as e:
         print(f"Error loading model: {e}")
-        return
+        return ""
 
     print(f"Transcribing '{audio_file}'...")
+    full_text = []
+    
     try:
         segments, info = model.transcribe(audio_file, beam_size=5)
 
@@ -41,12 +45,15 @@ def transcribe_audio(audio_file, model_size="small", device="cpu", compute_type=
 
         for segment in segments:
             print(f"[{segment.start:.2f}s -> {segment.end:.2f}s] {segment.text}")
+            full_text.append(segment.text)
             
         print("-" * 50)
         print("Transcription complete.")
+        return " ".join(full_text)
         
     except Exception as e:
         print(f"Error during transcription: {e}")
+        return ""
 
 def main():
     # Check for command line argument
