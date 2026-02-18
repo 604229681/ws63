@@ -29,6 +29,20 @@ int audio_websocket_init(void);
 int audio_websocket_send(const uint8_t *data, size_t len);
 
 /**
+ * @brief WebSocket Receive Callback
+ * 
+ * Called when binary data is received from the server
+ */
+typedef void (*websocket_rx_callback_t)(const uint8_t *data, size_t len);
+
+/**
+ * @brief Set RX Callback
+ * 
+ * Register a callback to be called when data is received
+ */
+void audio_websocket_set_rx_callback(websocket_rx_callback_t callback);
+
+/**
  * @brief Close WebSocket connection
  * 
  * Closes the WebSocket connection and frees resources

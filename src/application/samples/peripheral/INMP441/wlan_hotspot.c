@@ -8,8 +8,8 @@
 #include "soc_osal.h"
 #include <string.h>
 
-#define WIFI_SSID "testap"
-#define WIFI_PASSWORD "123456789"
+#define WIFI_SSID "testap"       // TODO: Update with your WiFi SSID
+#define WIFI_PASSWORD "12345678" // TODO: Update with your WiFi Password
 #define WIFI_IFNAME_MAX_SIZE 16
 #define WIFI_MAX_SSID_LEN 33
 #define WIFI_SCAN_AP_LIMIT 64
@@ -49,7 +49,7 @@ static td_void wifi_connection_callback(td_s32 state, const wifi_linked_info_str
     (void)info;
     (void)reason_code;
 
-    if (state == 0) {  // Not available
+    if (state == 0) { // Not available
         osal_printk("[WiFi] Connect fail! Try again\r\n");
         g_wifi_state = WIFI_STATE_INIT;
         g_wifi_connected = 0;
@@ -103,7 +103,7 @@ static td_s32 get_match_network(wifi_sta_config_stru *config)
     memcpy_s(config->bssid, WIFI_MAC_LEN, result[i].bssid, WIFI_MAC_LEN);
     config->security_type = result[i].security_type;
     memcpy_s(config->pre_shared_key, WIFI_MAX_SSID_LEN, WIFI_PASSWORD, strlen(WIFI_PASSWORD));
-    config->ip_type = 1;  // DHCP
+    config->ip_type = 1; // DHCP
 
     osal_kfree(result);
     return 0;
@@ -207,7 +207,7 @@ int wifi_connect_to_hotspot(void)
         } else if (g_wifi_state == WIFI_STATE_GET_IP) {
             if (check_dhcp_status(netif_p, &wait_count) == 0) {
                 g_wifi_connected = 1;
-                break;  // Success!
+                break; // Success!
             }
             wait_count++;
         }

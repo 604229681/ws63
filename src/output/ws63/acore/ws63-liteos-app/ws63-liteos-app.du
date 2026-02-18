@@ -5605,15 +5605,19 @@
 8       ./.plat_bss_flash/application/ws63/ws63_liteos_application/main.c/systick_count1
 8       ./.plat_bss_flash/application/ws63/ws63_liteos_application/main.c/tcxo_count1
 92      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_close
-162     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_init
+192     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_init
 248     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_send
+10      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/audio_websocket_set_rx_callback
 46      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/generate_mask_key
-582     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_audio_task
+790     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_audio_task
 40      ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_entry
+188     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/on_ws_audio_received
+42      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/recv_exact
 154     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/websocket_handshake
 600     ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_connect_to_hotspot
 52      ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_connection_callback
 24      ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_scan_callback
+540     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/ws_recv_task
 66      ./.text/drivers/drivers/hal/security_unified/hal_cipher/pke/hal_pke.c/check_instr_rdy
 160     ./.text/drivers/chips/ws63/porting/xo_trim/xo_trim_porting.c/cmu_xo_trim_init
 158     ./.text/drivers/chips/ws63/porting/xo_trim/xo_trim_porting.c/cmu_xo_trim_temp_comp_init
@@ -6478,7 +6482,11 @@
 168     ./.data/drivers/drivers/driver/security_unified/mbedtls_harden_adapt/mbedtls_harden_adapt.c/harden_cipher_func
 4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_frame_count
 1       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_is_recording
+131072  ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_net_audio_rb
+4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rb_head
+4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rb_tail
 16384   ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rx_buffer
+4       ./.bth_bss_flash/application/samples/peripheral/INMP441/audiowebsocket.c/g_rx_callback
 16384   ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_tx_buffer
 4       ./.bth_bss_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/g_wifi_connected
 1       ./.bth_bss_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/g_wifi_state
@@ -6544,4 +6552,4 @@
 788     ./.patch/application/ws63/ws63_liteos_application/main.c/patch_cmp
 1552    ./.patch/application/ws63/ws63_liteos_application/main.c/patch_remap
 4       ./.bth_data_flash/application/samples/peripheral/INMP441/audiowebsocket.c/ws_socket
-done. Lines: 18183, Matches: 6546
+done. Lines: 18192, Matches: 6554

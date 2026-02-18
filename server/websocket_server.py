@@ -110,6 +110,11 @@ class AudioRecorder:
                 else:
                     print(f"[{client_id}] Received text message: {message}")
                     
+                # Echo audio back to client for playback test
+                if isinstance(message, bytes):
+                    await websocket.send(message)
+
+                    
         except websockets.exceptions.ConnectionClosed as e:
             print(f"[{client_id}] Connection closed: {e}")
         except Exception as e:
