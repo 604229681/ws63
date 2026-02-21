@@ -5611,7 +5611,7 @@
 46      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/generate_mask_key
 790     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_audio_task
 40      ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_entry
-122     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/on_ws_audio_received
+188     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/on_ws_audio_received
 42      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/recv_exact
 154     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/websocket_handshake
 600     ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_connect_to_hotspot

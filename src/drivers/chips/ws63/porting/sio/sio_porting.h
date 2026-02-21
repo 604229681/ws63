@@ -24,39 +24,39 @@ extern "C" {
  * @ingroup  drivers_port
  * @{
  */
-#define I2S_S_CLK                       32000
-#define FREQ_OF_NEED                    16
-#define SIO_LOOP                        8
-#define I2S_M_CLK                       32000
-#define I2S_CR                          0x608
-#define I2S_CR_DIV_NUM_BIT              5
-#define I2S_CR_DIV_NUM_LEN              4
-#define I2S_FIFO_SIZE                   16
-#define HAL_CFG_I2S_BCLK_DIV_EN         0x1000
-#define HAL_CFG_I2S_CLK_SEL             0x1014
-#define HAL_CFG_I2S_MS_CFG              0x1024
-#define HAL_CFG_I2S_FS_DIV_EN           0x1008
-#define HAL_CFG_I2S_FS_DIV_NUM          0x100c
-#define HAL_CFG_I2S_FS_DIV_RATIO_NUM    0x1010
-#define M_CLKEN0                        0x40
-#define I2S_DUTY_CYCLE                  2
-#define PCM_DIV_RATIO_NUM               1
-#define CFG_I2S_BCLK_DIV_EN             0
-#define CFG_I2S_BCLK_LOAD_DIV_EN        1
-#define I2S_FS_DIV_NUM_CONFIG_BITS      11
-#define I2S_FS_DIV_RATIO_NUM_BITS       11
-#define I2S_READ_WAIT_TIMES_MAX         8
-#define I2S_PARAM                       2
+#define I2S_S_CLK 32000
+#define FREQ_OF_NEED 16
+#define SIO_LOOP 8
+#define I2S_M_CLK 32000
+#define I2S_CR 0x608
+#define I2S_CR_DIV_NUM_BIT 5
+#define I2S_CR_DIV_NUM_LEN 4
+#define I2S_FIFO_SIZE 16
+#define HAL_CFG_I2S_BCLK_DIV_EN 0x1000
+#define HAL_CFG_I2S_CLK_SEL 0x1014
+#define HAL_CFG_I2S_MS_CFG 0x1024
+#define HAL_CFG_I2S_FS_DIV_EN 0x1008
+#define HAL_CFG_I2S_FS_DIV_NUM 0x100c
+#define HAL_CFG_I2S_FS_DIV_RATIO_NUM 0x1010
+#define M_CLKEN0 0x40
+#define I2S_DUTY_CYCLE 2
+#define PCM_DIV_RATIO_NUM 1
+#define CFG_I2S_BCLK_DIV_EN 0
+#define CFG_I2S_BCLK_LOAD_DIV_EN 1
+#define I2S_FS_DIV_NUM_CONFIG_BITS 11
+#define I2S_FS_DIV_RATIO_NUM_BITS 11
+#define I2S_READ_WAIT_TIMES_MAX 8
+#define I2S_PARAM 2
 
-#define SIXTEEN_WIDTH                   16
-#define EIGHTTEEN_WIDTH                 18
-#define TWENTY_WIDTH                    20
-#define TWENTY_FOUR_WIDTH               24
-#define THIRTY_TWO_WIDTH                32
-#define NUM_OF_PIN_REGS                 5
-#define CONFIG_I2S_BUS_MAX_NUM          1
-#define CONFIG_I2S_SUPPORT_LOOPBACK     1
-#define CONFIG_DATA_LEN_MAX             128
+#define SIXTEEN_WIDTH 16
+#define EIGHTTEEN_WIDTH 18
+#define TWENTY_WIDTH 20
+#define TWENTY_FOUR_WIDTH 24
+#define THIRTY_TWO_WIDTH 32
+#define NUM_OF_PIN_REGS 5
+#define CONFIG_I2S_BUS_MAX_NUM 1
+#define CONFIG_I2S_SUPPORT_LOOPBACK 1
+#define CONFIG_DATA_LEN_MAX 128
 
 /**
  * @brief  Definition of the contorl ID of hal sio.

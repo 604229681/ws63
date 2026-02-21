@@ -34,9 +34,9 @@
     .wifi_data_sram   0x00A0F570                     0                  
     .btc_data_sram    0x00A0F570                     0                  
     .bth_data_sram    0x00A0F570                     0                  
-    .btc_data_flash   0x00A0F570                  5024 load address 0x368D18
-    .bth_data_flash   0x00A10910                  2484 load address 0x36A0B8
-    .data             0x00A112C8                   440 load address 0x36AA70
+    .btc_data_flash   0x00A0F570                  5024 load address 0x368D58
+    .bth_data_flash   0x00A10910                  2484 load address 0x36A0F8
+    .data             0x00A112C8                   440 load address 0x36AAB0
     .plat_bss_sram    0x00A11480                  1217                  
     .plat_bss_flash   0x00A11948                 12692                  
     .wifi_bss_flash   0x00A14AE0                 38032                  
@@ -55,7 +55,7 @@
     startup           0x00230300                   424                  
     .sysintcall.init  0x002304A8                    52                  
   
-  PROGRAM             0x00230700    0x23F900  0x13A528 = 1287464
+  PROGRAM             0x00230700    0x23F900  0x13A568 = 1287528
     .patch            0x00230700                  2344                  
     .rom_ram_cb_text  0x00231028                  1816                  
     .plat_romdata     0x00231740                   212                  
@@ -71,13 +71,13 @@
     .wifi_text_flash  0x00263A80                587666                  
     .patch_on_flash   0x002F3218                  2378                  
     .btc_text_flash   0x002F3B68                135908                  
-    .bth_text_flash   0x00314E50                239704                  
-    .radar_text_flash  0x0034F6A8                 39408                  
-    .radar_ai_text_flash  0x00359098                 10204                  
-    .text             0x0035B878                 54428                  
-    .btc_data_flash   0x00368D18                  5024                  
-    .bth_data_flash   0x0036A0B8                  2484                  
-    .data             0x0036AA70                   440                  
+    .bth_text_flash   0x00314E50                239768                  
+    .radar_text_flash  0x0034F6E8                 39408                  
+    .radar_ai_text_flash  0x003590D8                 10204                  
+    .text             0x0035B8B8                 54428                  
+    .btc_data_flash   0x00368D58                  5024                  
+    .bth_data_flash   0x0036A0F8                  2484                  
+    .data             0x0036AAB0                   440                  
 
   ====================================================
 
@@ -1290,14 +1290,14 @@
   --------------------------------  --------  -----
 
 
-  .bth_text_flash                       2952
+  .bth_text_flash                       3018
 
     application                             
       samples                               
         peripheral                          
           INMP441                           
             audiowebsocket                        1324
-            INMP441                                952
+            INMP441                               1018
             wlan_hotspot                           676
 
 

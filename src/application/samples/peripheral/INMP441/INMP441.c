@@ -31,7 +31,7 @@
 #include "lwip/sys.h" // For sys_msleep
 
 // I2S配置参数
-#define I2S_DIV_NUMBER 32    // 16kHz
+#define I2S_DIV_NUMBER 32    // 32kHz
 #define I2S_CHANNEL_NUMBER 2 // 双声道
 #define I2S_TX_INT_THRESHOLD 4
 #define I2S_RX_INT_THRESHOLD 4
@@ -41,7 +41,7 @@
 
 // 音频处理参数
 // Sample Count: 2048 Frames (Stereo Packed) -> 8192 Bytes
-// Duration: 2048 / 16000 = 128ms
+// Duration: 2048 / 32000 = 64ms
 #define FRAME_COUNT 2048
 #define BUFFER_CNT 2
 
@@ -115,20 +115,41 @@ static void on_ws_audio_received(const uint8_t *data, size_t len)
         osal_printk("[WS RX] Len: %d\r\n", len);
     }
 
-    // Safety: Align to 4 bytes (1 uint32_t sample)
-    if (len % 4 != 0) {
-        len -= (len % 4);
+    // Safety: Align to 2 bytes (1 int16 sample)
+    if (len % 2 != 0) {
+        len -= (len % 2);
     }
 
-    // The server currently echoes the EXACT 32-bit packed stereo data at 16kHz
-    // (the same format we sent). No conversion or upsampling is needed because
-    // the format perfectly matches our g_tx_buffer layout.
+    // Convert 16kHz 16-bit Mono (Received from WebSocket) -> 32kHz 32-bit Stereo (Hardware Playback)
+    // 16kHz input needs to be played on 32kHz hardware, so we must 2x upsample it (duplicate each sample).
+    // Mono needs to be played on Stereo hardware, so we duplicate the sample to Left and Right channels.
 
-    // Push the received network audio directly to the RingBuffer.
-    const uint32_t *input_samples = (const uint32_t *)data;
-    size_t sample_count = len / 4;
+#define CONVERT_CHUNK_SIZE 32
+    uint32_t temp_buf[CONVERT_CHUNK_SIZE * 2]; // *2 for 2x Upsampling
 
-    rb_push(input_samples, sample_count);
+    const int16_t *input_samples = (const int16_t *)data;
+    size_t sample_count = len / 2; // Number of Mono 16-bit samples
+
+    size_t processed = 0;
+    while (processed < sample_count) {
+        size_t chunk =
+            (sample_count - processed > CONVERT_CHUNK_SIZE) ? CONVERT_CHUNK_SIZE : (sample_count - processed);
+
+        for (size_t i = 0; i < chunk; i++) {
+            int16_t sample = input_samples[processed + i];
+
+            // Convert Mono to Stereo (Duplicate sample to L and R)
+            // Layout: [High: Right | Low: Left]
+            uint32_t val = ((uint32_t)(uint16_t)sample << 16) | (uint16_t)sample;
+
+            // 2x Upsampling (Repeat Frame) to fix "Fast" playback (16kHz Source -> 32kHz Playback)
+            temp_buf[2 * i] = val;
+            temp_buf[2 * i + 1] = val;
+        }
+
+        rb_push(temp_buf, chunk * 2);
+        processed += chunk;
+    }
 }
 
 // 处理音频数据: 提取左声道，复制到右声道，清除噪音
@@ -323,10 +344,10 @@ static void *i2s_audio_task(const char *arg)
             // For now, allow glitch during reconnection.
 
             static uint32_t last_reconnect_frame = 0;
-            if (g_frame_count - last_reconnect_frame > 25) { // ~3 seconds (25 * 128ms = 3.2s)
-                                                             // FRAME_COUNT=2048. Rate=16000. 1 frame = 128ms.
+            if (g_frame_count - last_reconnect_frame > 50) { // ~3 seconds (50 * 64ms = 3.2s)
+                                                             // FRAME_COUNT=2048. Rate=32000. 1 frame = 64ms.
                                                              // g_frame_count increments by 1 per loop.
-                                                             // So 1 loop = 128ms.
+                                                             // So 1 loop = 64ms.
                                                              // Wait 20 loops ~ 2.5 seconds.
                 osal_printk("[WS] Attempting Reconnect...\r\n");
                 if (audio_websocket_init() == 0) {
