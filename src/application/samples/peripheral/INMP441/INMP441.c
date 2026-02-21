@@ -31,7 +31,7 @@
 #include "lwip/sys.h" // For sys_msleep
 
 // I2S配置参数
-#define I2S_DIV_NUMBER 16    // 16kHz
+#define I2S_DIV_NUMBER 32    // 16kHz
 #define I2S_CHANNEL_NUMBER 2 // 双声道
 #define I2S_TX_INT_THRESHOLD 4
 #define I2S_RX_INT_THRESHOLD 4
@@ -69,7 +69,7 @@ static volatile bool g_is_recording = false;
 static uint32_t g_frame_count = 0;
 
 // Ring Buffer for Audio Playback (RX from WebSocket)
-#define RB_SIZE (FRAME_COUNT * 16) // 16 Buffers Depth (~2 seconds)
+#define RB_SIZE (FRAME_COUNT * 4) // 4 Buffers Depth (~512ms)
 static uint32_t g_net_audio_rb[RB_SIZE];
 static volatile uint32_t g_rb_head = 0;
 static volatile uint32_t g_rb_tail = 0;
@@ -108,12 +108,6 @@ static uint32_t rb_count(void)
 // WebSocket RX Callback
 static void on_ws_audio_received(const uint8_t *data, size_t len)
 {
-    // 16-bit Mono (Received) -> 32-bit Stereo (Playback)
-    // Input: [Sample 0 (16b)] [Sample 1 (16b)] ...
-    // Output: [Right0(16b)|Left0(16b)] [Right1(16b)|Left1(16b)] ...
-    // Note: I2S Config is 16-bit Data Width, 2 Channels.
-    // In DMA memory, this is expected as 32-bit words where high 16 is Ch1(Right) and low 16 is Ch0(Left).
-
     // Print received data info
     if (len >= 4) {
         osal_printk("[WS RX] Len: %d, Data: %02x %02x %02x %02x ...\r\n", len, data[0], data[1], data[2], data[3]);
@@ -121,38 +115,20 @@ static void on_ws_audio_received(const uint8_t *data, size_t len)
         osal_printk("[WS RX] Len: %d\r\n", len);
     }
 
-    // Safety: Align to 2 bytes (1 int16 sample)
-    if (len % 2 != 0) {
-        len -= (len % 2);
+    // Safety: Align to 4 bytes (1 uint32_t sample)
+    if (len % 4 != 0) {
+        len -= (len % 4);
     }
 
-// Process in chunks to avoid large stack usage
-#define CONVERT_CHUNK_SIZE 32
-    uint32_t temp_buf[CONVERT_CHUNK_SIZE * 2]; // *2 for 2x Upsampling
+    // The server currently echoes the EXACT 32-bit packed stereo data at 16kHz
+    // (the same format we sent). No conversion or upsampling is needed because
+    // the format perfectly matches our g_tx_buffer layout.
 
-    const int16_t *input_samples = (const int16_t *)data;
-    size_t sample_count = len / 2; // Number of Mono 16-bit samples
+    // Push the received network audio directly to the RingBuffer.
+    const uint32_t *input_samples = (const uint32_t *)data;
+    size_t sample_count = len / 4;
 
-    size_t processed = 0;
-    while (processed < sample_count) {
-        size_t chunk =
-            (sample_count - processed > CONVERT_CHUNK_SIZE) ? CONVERT_CHUNK_SIZE : (sample_count - processed);
-
-        for (size_t i = 0; i < chunk; i++) {
-            int16_t sample = input_samples[processed + i];
-
-            // Convert Mono to Stereo (Duplicate sample to L and R)
-            // Layout: [High: Right | Low: Left]
-            uint32_t val = ((uint32_t)(uint16_t)sample << 16) | (uint16_t)sample;
-
-            // 2x Upsampling (Repeat Frame) to fix "Fast" playback (8kHz Source -> 16kHz Playback)
-            temp_buf[2 * i] = val;
-            temp_buf[2 * i + 1] = val;
-        }
-
-        rb_push(temp_buf, chunk * 2);
-        processed += chunk;
-    }
+    rb_push(input_samples, sample_count);
 }
 
 // 处理音频数据: 提取左声道，复制到右声道，清除噪音

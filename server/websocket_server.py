@@ -17,27 +17,22 @@ import wave
 from datetime import datetime
 
 # Audio parameters
-SAMPLE_RATE = 16000  # 16kHz
+SAMPLE_RATE = 32000  # 32kHz (matches native I2S DIV_NUMBER=16)
 CHANNELS = 1  # Mono (device duplicates mono to stereo)
 SAMPLE_WIDTH = 2  # 16-bit = 2 bytes
 
 def unpack_audio_data(packed_data):
     """
-    Extract left channel from device's 32-bit packed format with deduplication.
+    Extract left channel from device's 32-bit packed format.
     
-    CRITICAL: Device sends data in a [A, B, A, B] repetition pattern:
-      Frame 0: Sample A
-      Frame 1: Sample B
-      Frame 2: Sample A (Duplicate)
-      Frame 3: Sample B (Duplicate)
-    
-    We must keep frames 0,1 and skip 2,3 to restore correct 16kHz audio.
+    Device sends: [High16: Right | Low16: Left] for every frame.
+    We extract the low 16 bits (left channel) for each 32-bit word.
     
     Args:
         packed_data: bytes - Raw data from device (4 bytes per frame)
     
     Returns:
-        bytes - Mono 16-bit PCM data (deduplicated, left channel only)
+        bytes - Mono 16-bit PCM data (left channel only)
     """
     if len(packed_data) % 4 != 0:
         print(f"Warning: Data length {len(packed_data)} is not a multiple of 4, truncating")
@@ -47,11 +42,6 @@ def unpack_audio_data(packed_data):
     unpacked = bytearray()
     
     for i in range(num_frames):
-        # Deduplication logic: Keep first 2 frames of every 4
-        # Pattern: Keep, Keep, Skip, Skip
-        if (i % 4) >= 2:
-            continue
-            
         # Read 32-bit packed word (little-endian)
         offset = i * 4
         packed_word = struct.unpack_from('<I', packed_data, offset)[0]
@@ -111,8 +101,9 @@ class AudioRecorder:
                     print(f"[{client_id}] Received text message: {message}")
                     
                 # Echo audio back to client for playback test
-                if isinstance(message, bytes):
-                    await websocket.send(message)
+                # DISABLE ECHO to prevent acoustic feedback loop / distortion
+                # if isinstance(message, bytes):
+                #     await websocket.send(message)
 
                     
         except websockets.exceptions.ConnectionClosed as e:

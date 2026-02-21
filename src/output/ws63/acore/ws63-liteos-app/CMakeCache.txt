@@ -61,7 +61,8 @@ CMAKE_ADDR2LINE:FILEPATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/c
 
 CMAKE_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar
 
-CMAKE_ASM_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
+//ASM compiler
+CMAKE_ASM_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
 
 CMAKE_ASM_COMPILER_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar
 
@@ -89,7 +90,8 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-CMAKE_CXX_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-g++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -98,9 +100,6 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/r
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc-ranlib
-
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER_WORKS:UNINITIALIZED=TRUE
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -117,14 +116,12 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-CMAKE_C_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
+//C compiler
+CMAKE_C_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
 
 CMAKE_C_COMPILER_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar
 
 CMAKE_C_COMPILER_RANLIB:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ranlib
-
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER_WORKS:UNINITIALIZED=TRUE
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -261,8 +258,8 @@ CMAKE_STRIP:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv3
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/hb/bearpi/fbb_ws63/src/build/toolchains/riscv32_musl_105_fp.cmake
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/hb/bearpi/fbb_ws63/src/build/toolchains/riscv32_musl_105_fp.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console

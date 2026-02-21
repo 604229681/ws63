@@ -5611,7 +5611,7 @@
 46      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/generate_mask_key
 790     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_audio_task
 40      ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/i2s_entry
-188     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/on_ws_audio_received
+122     ./.bth_text_flash/application/samples/peripheral/INMP441/INMP441.c/on_ws_audio_received
 42      ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/recv_exact
 154     ./.bth_text_flash/application/samples/peripheral/INMP441/audiowebsocket.c/websocket_handshake
 600     ./.bth_text_flash/application/samples/peripheral/INMP441/wlan_hotspot.c/wifi_connect_to_hotspot
@@ -6482,7 +6482,7 @@
 168     ./.data/drivers/drivers/driver/security_unified/mbedtls_harden_adapt/mbedtls_harden_adapt.c/harden_cipher_func
 4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_frame_count
 1       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_is_recording
-131072  ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_net_audio_rb
+32768   ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_net_audio_rb
 4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rb_head
 4       ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rb_tail
 16384   ./.bth_bss_flash/application/samples/peripheral/INMP441/INMP441.c/g_rx_buffer
