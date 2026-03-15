@@ -300,21 +300,45 @@ static void *i2s_audio_task(const char *arg)
         // A. Capture Path: Mic -> Buffer -> Process -> WebSocket
         process_audio_buffer(g_rx_buffer[buf_idx], g_tx_buffer[next_idx], FRAME_COUNT);
 
+        // Half-duplex voice control:
+        // Stop capturing audio while the device is actively playing back WebSocket audio.
+        uint32_t available = rb_count();
+        bool is_playing = (available > 0);
+
+        // We add a cooldown of 10 frames (~640ms at 32kHz) to allow for acoustic delay/reverb to decay
+        // after the speaker finishes playing, so we don't accidentally capture the echo.
+        static uint32_t playback_cooldown = 0;
+        if (is_playing) {
+            playback_cooldown = 10;
+        } else if (playback_cooldown > 0) {
+            playback_cooldown--;
+        }
+
         // B. Playback Path: RingBuffer -> Speaker
         // We overwrite g_tx_buffer with network data for playback
         // Note: g_tx_buffer[next_idx] currently holds processed mic data suited for Loopback.
         // If we want Mic->Network AND Network->Speaker, we must send Mic data FIRST, then overwrite for Speaker.
 
-        // C. Send Mic Data (Captured in Step A)
-        int ws_ret = audio_websocket_send((const uint8_t *)g_tx_buffer[next_idx], FRAME_COUNT * sizeof(uint32_t));
+        int ws_ret = 0;
+        if (playback_cooldown == 0) {
+            // C. Send Mic Data (Captured in Step A)
+            ws_ret = audio_websocket_send((const uint8_t *)g_tx_buffer[next_idx], FRAME_COUNT * sizeof(uint32_t));
+        }
 
         // D. Prepare Playback Data from Network RingBuffer
         // If we have enough data, fill TX buffer. Else silence.
-        uint32_t available = rb_count();
         if (available >= FRAME_COUNT) {
             for (int i = 0; i < FRAME_COUNT; i++) {
                 rb_pop(&g_tx_buffer[next_idx][i]);
             }
+        } else if (available > 0) {
+            // Drain the remaining partial frame to ensure the buffer empties and `is_playing` turns off.
+            for (uint32_t i = 0; i < available; i++) {
+                rb_pop(&g_tx_buffer[next_idx][i]);
+            }
+            // Fill the rest of the frame with silence
+            memset_s(&g_tx_buffer[next_idx][available], (FRAME_COUNT - available) * sizeof(uint32_t), 0,
+                     (FRAME_COUNT - available) * sizeof(uint32_t));
         } else {
             // Not enough data (Underrun) -> Silence
             // Or maybe comfort noise? For now silence.
