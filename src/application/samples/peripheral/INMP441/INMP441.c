@@ -50,7 +50,7 @@
 #define VOLUME_LEVEL 50
 
 // 任务配置
-#define I2S_TASK_PRIO 24
+#define I2S_TASK_PRIO 0
 #define I2S_TASK_STACK_SIZE 0x2000
 
 // I2S模式定义

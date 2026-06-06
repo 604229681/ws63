@@ -28,5 +28,6 @@
         "cstdint": "c",
         "random": "cpp"
     },
-    "cmake.sourceDirectory": "/home/hb/bearpi/fbb_ws63/src"
+    "cmake.sourceDirectory": "/home/hb/bearpi/fbb_ws63/src",
+    "diffEditor.renderSideBySide": true
 }

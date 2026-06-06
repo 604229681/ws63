@@ -14,3 +14,9 @@ C_FLAGS = -std=gnu99 -Wall -Werror -Wextra -Winit-self -Wpointer-arith -Wstrict-
 
 # Custom defines: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj_DEFINES = THIS_FILE_ID=WLAN_HOTSPOT_C;THIS_MOD_ID=LOG_PFMODULE
 
+# Custom defines: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj_DEFINES = THIS_FILE_ID=SPI_MASTER_LCD_C;THIS_MOD_ID=LOG_PFMODULE
+
+# Custom defines: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj_DEFINES = THIS_FILE_ID=ST7789_C;THIS_MOD_ID=LOG_PFMODULE
+
+# Custom defines: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj_DEFINES = THIS_FILE_ID=LCD_FONTS_C;THIS_MOD_ID=LOG_PFMODULE
+

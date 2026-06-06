@@ -61,7 +61,8 @@ CMAKE_ADDR2LINE:FILEPATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/c
 
 CMAKE_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar
 
-CMAKE_ASM_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
+//ASM compiler
+CMAKE_ASM_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
 
 CMAKE_ASM_COMPILER_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar
 
@@ -89,7 +90,8 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-CMAKE_CXX_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-g++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -114,7 +116,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-CMAKE_C_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
+//C compiler
+CMAKE_C_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc
 
 CMAKE_C_COMPILER_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar
 
@@ -604,7 +607,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=258
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=259
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -892,7 +895,7 @@ reboot_port_MODULE_NAME:INTERNAL=pf
 reboot_port_SOURCES:INTERNAL=/home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/reboot/reboot_porting.c
 samples_AUTO_DEF:INTERNAL=TRUE
 samples_MODULE_NAME:INTERNAL=pf
-samples_SOURCES:INTERNAL=/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c
+samples_SOURCES:INTERNAL=/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c;/home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c
 sfc_flash_config_ws63_AUTO_DEF:INTERNAL=TRUE
 sfc_flash_config_ws63_MODULE_NAME:INTERNAL=pf
 sfc_flash_config_ws63_SOURCES:INTERNAL=/home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/porting/sfc/flash_config/flash_config_info.c

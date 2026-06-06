@@ -71,7 +71,7 @@ if(DEFINED CONFIG_SAMPLE_SUPPORT_SFC_PERF)
 endif()
 
 if(DEFINED CONFIG_SAMPLE_SUPPORT_SPI)
-    add_subdirectory_if_exist(spi)
+    add_subdirectory_if_exist(spi_lcd)
 endif()
 
 if(DEFINED CONFIG_SAMPLE_SUPPORT_SYSTICK)

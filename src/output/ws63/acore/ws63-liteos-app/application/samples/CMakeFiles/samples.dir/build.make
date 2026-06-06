@@ -111,11 +111,56 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.s"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=WLAN_HOTSPOT_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -S /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c -o CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.s
 
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SPI_MASTER_LCD_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj -MF CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj.d -o CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.i"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SPI_MASTER_LCD_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -E /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c > CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.i
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.s"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SPI_MASTER_LCD_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -S /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c -o CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.s
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=ST7789_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj -MF CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj.d -o CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.i"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=ST7789_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -E /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c > CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.i
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.s"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=ST7789_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -S /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c -o CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.s
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=LCD_FONTS_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj -MF CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj.d -o CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.i"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=LCD_FONTS_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -E /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c > CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.i
+
+application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.s"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=LCD_FONTS_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -S /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c -o CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.s
+
 # Object files for target samples
 samples_OBJECTS = \
 "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj" \
 "CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj" \
-"CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj"
+"CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj" \
+"CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj" \
+"CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj" \
+"CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj"
 
 # External object files for target samples
 samples_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ samples_EXTERNAL_OBJECTS =
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj
+application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj
+application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj
+application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/build.make
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libsamples.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libsamples.a"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && $(CMAKE_COMMAND) -P CMakeFiles/samples.dir/cmake_clean_target.cmake
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/samples.dir/link.txt --verbose=$(VERBOSE)
 

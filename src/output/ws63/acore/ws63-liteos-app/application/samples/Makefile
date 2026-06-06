@@ -202,6 +202,78 @@ peripheral/INMP441/wlan_hotspot.c.s:
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.s
 .PHONY : peripheral/INMP441/wlan_hotspot.c.s
 
+peripheral/spi_lcd/lcd_fonts.obj: peripheral/spi_lcd/lcd_fonts.c.obj
+.PHONY : peripheral/spi_lcd/lcd_fonts.obj
+
+# target to build an object file
+peripheral/spi_lcd/lcd_fonts.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj
+.PHONY : peripheral/spi_lcd/lcd_fonts.c.obj
+
+peripheral/spi_lcd/lcd_fonts.i: peripheral/spi_lcd/lcd_fonts.c.i
+.PHONY : peripheral/spi_lcd/lcd_fonts.i
+
+# target to preprocess a source file
+peripheral/spi_lcd/lcd_fonts.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.i
+.PHONY : peripheral/spi_lcd/lcd_fonts.c.i
+
+peripheral/spi_lcd/lcd_fonts.s: peripheral/spi_lcd/lcd_fonts.c.s
+.PHONY : peripheral/spi_lcd/lcd_fonts.s
+
+# target to generate assembly for a file
+peripheral/spi_lcd/lcd_fonts.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.s
+.PHONY : peripheral/spi_lcd/lcd_fonts.c.s
+
+peripheral/spi_lcd/spi_master_lcd.obj: peripheral/spi_lcd/spi_master_lcd.c.obj
+.PHONY : peripheral/spi_lcd/spi_master_lcd.obj
+
+# target to build an object file
+peripheral/spi_lcd/spi_master_lcd.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj
+.PHONY : peripheral/spi_lcd/spi_master_lcd.c.obj
+
+peripheral/spi_lcd/spi_master_lcd.i: peripheral/spi_lcd/spi_master_lcd.c.i
+.PHONY : peripheral/spi_lcd/spi_master_lcd.i
+
+# target to preprocess a source file
+peripheral/spi_lcd/spi_master_lcd.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.i
+.PHONY : peripheral/spi_lcd/spi_master_lcd.c.i
+
+peripheral/spi_lcd/spi_master_lcd.s: peripheral/spi_lcd/spi_master_lcd.c.s
+.PHONY : peripheral/spi_lcd/spi_master_lcd.s
+
+# target to generate assembly for a file
+peripheral/spi_lcd/spi_master_lcd.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.s
+.PHONY : peripheral/spi_lcd/spi_master_lcd.c.s
+
+peripheral/spi_lcd/st7789.obj: peripheral/spi_lcd/st7789.c.obj
+.PHONY : peripheral/spi_lcd/st7789.obj
+
+# target to build an object file
+peripheral/spi_lcd/st7789.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj
+.PHONY : peripheral/spi_lcd/st7789.c.obj
+
+peripheral/spi_lcd/st7789.i: peripheral/spi_lcd/st7789.c.i
+.PHONY : peripheral/spi_lcd/st7789.i
+
+# target to preprocess a source file
+peripheral/spi_lcd/st7789.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.i
+.PHONY : peripheral/spi_lcd/st7789.c.i
+
+peripheral/spi_lcd/st7789.s: peripheral/spi_lcd/st7789.c.s
+.PHONY : peripheral/spi_lcd/st7789.s
+
+# target to generate assembly for a file
+peripheral/spi_lcd/st7789.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.s
+.PHONY : peripheral/spi_lcd/st7789.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +292,15 @@ help:
 	@echo "... peripheral/INMP441/wlan_hotspot.obj"
 	@echo "... peripheral/INMP441/wlan_hotspot.i"
 	@echo "... peripheral/INMP441/wlan_hotspot.s"
+	@echo "... peripheral/spi_lcd/lcd_fonts.obj"
+	@echo "... peripheral/spi_lcd/lcd_fonts.i"
+	@echo "... peripheral/spi_lcd/lcd_fonts.s"
+	@echo "... peripheral/spi_lcd/spi_master_lcd.obj"
+	@echo "... peripheral/spi_lcd/spi_master_lcd.i"
+	@echo "... peripheral/spi_lcd/spi_master_lcd.s"
+	@echo "... peripheral/spi_lcd/st7789.obj"
+	@echo "... peripheral/spi_lcd/st7789.i"
+	@echo "... peripheral/spi_lcd/st7789.s"
 .PHONY : help
 
 

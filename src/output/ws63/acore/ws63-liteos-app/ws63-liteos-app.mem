@@ -24,38 +24,38 @@
     .btc_bss_tcm      0x00183630                    28                  
     .wifi_bss_tcm     0x00183650                   956                  
   
-  SRAM                0x00A00000     0x85F00   0x3D5B0 = 251312
+  SRAM                0x00A00000     0x85F00   0x3D680 = 251520
     .wifi_pkt_ram     0x00A00000                 49152                  
-    .plat_text_sram   0x00A0C000                 10932 load address 0x234BE8
-    .wifi_text_sram   0x00A0EAB8                     0                  
-    .btc_text_sram    0x00A0EAB8                     0                  
-    .bth_text_sram    0x00A0EAB8                     0                  
-    .patch_on_sram    0x00A0EAB8                  2744 load address 0x2376A0
-    .wifi_data_sram   0x00A0F570                     0                  
-    .btc_data_sram    0x00A0F570                     0                  
-    .bth_data_sram    0x00A0F570                     0                  
-    .btc_data_flash   0x00A0F570                  5024 load address 0x368DB8
-    .bth_data_flash   0x00A10910                  2484 load address 0x36A158
-    .data             0x00A112C8                   440 load address 0x36AB10
-    .plat_bss_sram    0x00A11480                  1217                  
-    .plat_bss_flash   0x00A11948                 12692                  
-    .wifi_bss_flash   0x00A14AE0                 38032                  
-    .radar_bss_flash  0x00A1DF70                 40128                  
-    .radar_ai_bss_flash  0x00A27C30                  6133                  
-    .btc_bss_flash    0x00A29428                  3288                  
-    .bth_bss_flash    0x00A2A100                 68857                  
-    .bss              0x00A3AE00                  5032                  
-    .stacks           0x00A3C1B0                  5120                  
-    .heap             0x00A3D5B0                     0                  
+    .plat_text_sram   0x00A0C000                 10980 load address 0x234BE8
+    .wifi_text_sram   0x00A0EAE8                     0                  
+    .btc_text_sram    0x00A0EAE8                     0                  
+    .bth_text_sram    0x00A0EAE8                     0                  
+    .patch_on_sram    0x00A0EAE8                  2744 load address 0x2376D0
+    .wifi_data_sram   0x00A0F5A0                     0                  
+    .btc_data_sram    0x00A0F5A0                     0                  
+    .bth_data_sram    0x00A0F5A0                     0                  
+    .btc_data_flash   0x00A0F5A0                  5024 load address 0x3AA9F0
+    .bth_data_flash   0x00A10940                  2484 load address 0x3ABD90
+    .data             0x00A112F8                   448 load address 0x3AC748
+    .plat_bss_sram    0x00A114C0                  1217                  
+    .plat_bss_flash   0x00A11988                 12692                  
+    .wifi_bss_flash   0x00A14B20                 38032                  
+    .radar_bss_flash  0x00A1DFB0                 40128                  
+    .radar_ai_bss_flash  0x00A27C70                  6133                  
+    .btc_bss_flash    0x00A29468                  3288                  
+    .bth_bss_flash    0x00A2A140                 68857                  
+    .bss              0x00A3AE40                  5172                  
+    .stacks           0x00A3C280                  5120                  
+    .heap             0x00A3D680                     0                  
   
   PRESERVE_SHARE_MEM  0x00A85F00       0x100      0xFC = 252
     .preserve         0x00A85F00                   252                  
   
-  PROGRAM_STARTUP     0x00230300       0x400     0x1DC = 476
-    startup           0x00230300                   424                  
-    .sysintcall.init  0x002304A8                    52                  
+  PROGRAM_STARTUP     0x00230300       0x400     0x1E0 = 480
+    startup           0x00230300                   428                  
+    .sysintcall.init  0x002304AC                    52                  
   
-  PROGRAM             0x00230700    0x23F900  0x13A5C8 = 1287624
+  PROGRAM             0x00230700    0x23F900  0x17C208 = 1557000
     .patch            0x00230700                  2344                  
     .rom_ram_cb_text  0x00231028                  1816                  
     .plat_romdata     0x00231740                   212                  
@@ -65,19 +65,19 @@
     .patch_on_tcm     0x00233848                  1528                  
     .btc_data_tcm     0x00233E40                    62                  
     .wifi_data_tcm    0x00233E80                  3432                  
-    .plat_text_sram   0x00234BE8                 10932                  
-    .patch_on_sram    0x002376A0                  2744                  
-    .plat_text_flash  0x00238158                178472                  
-    .wifi_text_flash  0x00263A80                587666                  
-    .patch_on_flash   0x002F3218                  2378                  
-    .btc_text_flash   0x002F3B68                135908                  
-    .bth_text_flash   0x00314E50                239864                  
-    .radar_text_flash  0x0034F748                 39408                  
-    .radar_ai_text_flash  0x00359138                 10204                  
-    .text             0x0035B918                 54428                  
-    .btc_data_flash   0x00368DB8                  5024                  
-    .bth_data_flash   0x0036A158                  2484                  
-    .data             0x0036AB10                   440                  
+    .plat_text_sram   0x00234BE8                 10980                  
+    .patch_on_sram    0x002376D0                  2744                  
+    .plat_text_flash  0x00238188                178476                  
+    .wifi_text_flash  0x00263AB8                587666                  
+    .patch_on_flash   0x002F3250                  2378                  
+    .btc_text_flash   0x002F3BA0                135908                  
+    .bth_text_flash   0x00314E88                506988                  
+    .radar_text_flash  0x00390AF8                 39408                  
+    .radar_ai_text_flash  0x0039A4E8                 10204                  
+    .text             0x0039CCC8                 56612                  
+    .btc_data_flash   0x003AA9F0                  5024                  
+    .bth_data_flash   0x003ABD90                  2484                  
+    .data             0x003AC748                   448                  
 
   ====================================================
 
@@ -89,7 +89,7 @@
   --------------------------------  --------  -----
 
 
-  .plat_text_flash                    100901
+  .plat_text_flash                    100905
 
     open_source                        32732
       mbedtls                               
@@ -416,24 +416,24 @@
           main                                    1090
           clock_init                               578
 
-    kernel                              1800
+    kernel                              1804
       non_os                             220
         non_os                              
           non_os_utils                             220
 
-      osal                              1554
+      osal                              1558
         adapt                             32
           liteos                            
             oal_onetrack                            28
             osal_debug_adapt                         4
 
-        src                             1522
+        src                             1526
           liteos                            
             osal_atomic                            122
             osal_cache                               4
             osal_event                             156
             osal_debug                              38
-            osal_task                              214
+            osal_task                              218
             osal_timer                             246
             osal_string                             20
             osal_msgqueue                          104
@@ -452,13 +452,39 @@
   --------------------------------  --------  -----
 
 
-  startup                                336
+  .bth_text_flash                     269970
 
-    application                          246
-      samples                              4
+    application                             
+      samples                               
         peripheral                          
-          INMP441                           
+          spi_lcd                     266856
+            chinese_font.h                        1280
+            lcd_fonts                             4568
+            emoji_frames.h                      259200
+            st7789                                1344
+            spi_master_lcd                         464
+
+          INMP441                       3114
+            audiowebsocket                        1324
+            INMP441                               1114
+            wlan_hotspot                           676
+
+
+  Section                            Total     Size
+
+  --------------------------------  --------  -----
+
+
+  startup                                340
+
+    application                          250
+      samples                              8
+        peripheral                          
+          INMP441                          4
             INMP441                                  4
+
+          spi_lcd                          4
+            spi_master_lcd                           4
 
       ws63                               242
         ws63_liteos_application             
@@ -1290,27 +1316,11 @@
   --------------------------------  --------  -----
 
 
-  .bth_text_flash                       3114
+  .text                                50655
 
-    application                             
-      samples                               
-        peripheral                          
-          INMP441                           
-            audiowebsocket                        1324
-            INMP441                               1114
-            wlan_hotspot                           676
-
-
-  Section                            Total     Size
-
-  --------------------------------  --------  -----
-
-
-  .text                                47699
-
-    drivers                            45547
-      drivers                          44477
-        hal                            18114
+    drivers                            48503
+      drivers                          47237
+        hal                            20626
           security_unified             14390
             hal_cipher                 12656
               pke                       7466
@@ -1349,9 +1359,17 @@
               hal_klad                             810
               hal_rkp                              440
 
-          sio                           1828
-            hal_sio_v151                1714
-              hal_sio_v151                        1600
+          spi                           2508
+            v151                        2462
+              hal_spi_v151                        2388
+              hal_spi_v151_regs_op.h                50
+              hal_spi_v151_regs_op                  24
+
+            hal_spi                                 46
+
+          sio                           1832
+            hal_sio_v151                1718
+              hal_sio_v151                        1604
               hal_sio_v151_regs_op.h               114
 
             hal_sio                                114
@@ -1364,7 +1382,7 @@
             hal_dma_mem                             12
             hal_dma                                 30
 
-        driver                         26363
+        driver                         26611
           security_unified             24863
             init                        2186
               cfbb                          
@@ -1432,13 +1450,16 @@
           i2s                            790
             i2s                                    790
 
+          spi                            248
+            spi                                    248
+
           gpio                           166
             gpio                                   166
 
           pmp                            116
             pmp                                    116
 
-      chips                             1070
+      chips                             1266
         ws63                                
           porting                           
             xo_trim                      496
@@ -1447,14 +1468,17 @@
             dma                          238
               dma_porting                          238
 
-            sio                          286
-              sio_porting                          286
+            sio                          290
+              sio_porting                          290
 
             version                       16
               version_porting                       16
 
             reboot                        34
               reboot_porting                        34
+
+            spi                          192
+              spi_porting                          192
 
     middleware                          2152
       utils                              488
@@ -1489,9 +1513,9 @@
   --------------------------------  --------  -----
 
 
-  .bss                                  4956
+  .bss                                  5094
 
-    drivers                             4640
+    drivers                             4778
       chips                               52
         ws63                                
           porting                           
@@ -1501,8 +1525,8 @@
             xo_trim                       24
               xo_trim_porting                       24
 
-      drivers                           4588
-        driver                          2786
+      drivers                           4726
+        driver                          2788
           security_unified              2763
             init                           5
               cfbb                          
@@ -1543,7 +1567,10 @@
           i2s                             21
             i2s                                     21
 
-        hal                             1802
+          spi                              2
+            spi                                      2
+
+        hal                             1938
           dma                            196
             v151                         192
               hal_dmac_v151                        192
@@ -1570,6 +1597,12 @@
               hal_sio_v151                        1064
 
             hal_sio                                  8
+
+          spi                            136
+            v151                         128
+              hal_spi_v151                         128
+
+            hal_spi                                  8
 
     middleware                           316
       chips                               36
@@ -1803,14 +1836,17 @@
   --------------------------------  --------  -----
 
 
-  .data                                  410
+  .data                                  418
 
-    drivers                              409
-      chips                                4
+    drivers                              417
+      chips                               12
         ws63                                
           porting                           
-            dma                             
+            dma                            4
               dma_porting                            4
+
+            spi                            8
+              spi_porting                            8
 
       drivers                            405
         hal                              232
@@ -1951,17 +1987,17 @@
 
   Mismatched section sizes...
 
-       startup  .lst file = 424 (0x1A8)
-                 .du file = 336 (0x150)
+       startup  .lst file = 428 (0x1AC)
+                 .du file = 340 (0x154)
 
-         .text  .lst file = 54428 (0xD49C)
-                 .du file = 47699 (0xBA53)
+         .text  .lst file = 56612 (0xDD24)
+                 .du file = 50655 (0xC5DF)
 
-         .data  .lst file = 440 (0x1B8)
-                 .du file = 410 (0x19A)
+         .data  .lst file = 448 (0x1C0)
+                 .du file = 418 (0x1A2)
 
-          .bss  .lst file = 5032 (0x13A8)
-                 .du file = 4956 (0x135C)
+          .bss  .lst file = 5172 (0x1434)
+                 .du file = 5094 (0x13E6)
 
   ====================================================
 

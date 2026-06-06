@@ -42,3 +42,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/INMP441/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/spi_lcd/cmake_install.cmake")
+endif()
+

@@ -20,12 +20,13 @@
 环境搭建步骤
 
 1. **下载代码**
+   
    ```bash
    git clone git@github.com:604229681/ws63.git
    cd ws63
-
+   
 2. **编译环境检查**
-   - 如果首次编译，请先执行如下命令
+   - 如果首次编译，请先执行如下命令，编译依赖的环境
     ```bash
      sudo apt update
    
@@ -37,6 +38,7 @@
     ```
 
 3. **编译命令**
+   
    - 进入src目录：
    ```bash
      cd src
@@ -53,7 +55,7 @@
    ```bash
      python3 build.py -c ws63-liteos-app menuconfig
    ```
-
+   
 4. **编译输出**
    - 成功编译后，输出文件位于 `src/output/ws63/fwpkg/ws63-liteos-app/`
    - 主固件文件：`ws63-liteos-app-all.fwpkg` 该估计可以烧入到设备上

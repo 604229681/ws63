@@ -57,13 +57,15 @@ void oled_entry(void)
 {
     uint32_t ret;
     osal_task *taskid;
+    printf("======oled_entry .\n");
+
     // 创建任务调度
     osal_kthread_lock();
     // 创建任务1
     taskid = osal_kthread_create((osal_kthread_handler)OledTask, NULL, "OledTask", I2C_TASK_STACK_SIZE);
     ret = osal_kthread_set_priority(taskid, I2C_TASK_PRIO);
     if (ret != OSAL_SUCCESS) {
-        printf("create task1 failed .\n");
+        printf("======oled create task1 failed .\n");
     }
     osal_kthread_unlock();
 }

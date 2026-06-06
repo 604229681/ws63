@@ -118,7 +118,7 @@ config SAMPLE_SUPPORT_HELLOWORLD_OLED
         This option means support Hello World oled Sample.
 
 if SAMPLE_SUPPORT_HELLOWORLD_OLED
-menu "Hello World Sample Configuration"
+menu "Hello World oled Sample Configuration"
     osource "application/samples/peripheral/helloworld_oled/Kconfig"
 endmenu
 endif
@@ -394,7 +394,7 @@ config SAMPLE_SUPPORT_SPI
 
 if SAMPLE_SUPPORT_SPI
 menu "SPI Sample Configuration"
-    osource "application/samples/peripheral/spi/Kconfig"
+    osource "application/samples/peripheral/spi_lcd/Kconfig"
 endmenu
 endif
 
