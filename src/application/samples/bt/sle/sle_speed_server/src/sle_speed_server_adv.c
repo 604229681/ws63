@@ -111,6 +111,7 @@ static int sle_set_default_announce_data(void)
 void sle_announce_enable_cbk(uint32_t announce_id, errcode_t status)
 {
     osal_printk("sle announce enable id:0x%02x, state:0x%02x\r\n", announce_id, status);
+    osal_printk("[speed server] ANNOUNCE_ENABLE_CBK_ENTERED, announce_id:0x%02x, status:0x%02x\r\n", announce_id, status);
 }
 
 void sle_announce_disable_cbk(uint32_t announce_id, errcode_t status)
@@ -126,6 +127,7 @@ void sle_announce_terminal_cbk(uint32_t announce_id)
 void sle_enable_cbk(errcode_t status)
 {
     osal_printk("sle enable status:0x%02x\r\n", status);
+    osal_printk("[speed server] SLE_ENABLE_CBK_ENTERED, status:0x%02x\r\n", status);
     sle_enable_server_cbk();
 }
 
@@ -142,6 +144,7 @@ void sle_announce_register_cbks(void)
 errcode_t sle_uuid_server_adv_init(void)
 {
     osal_printk("sle_uuid_server_adv_init in\r\n");
+    osal_printk("[speed server] ADV_INIT_ENTERED\r\n");
 
     sle_set_default_announce_param();
     sle_set_default_announce_data();

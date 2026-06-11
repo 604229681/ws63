@@ -86,6 +86,7 @@ static void ssaps_read_request_cbk(uint8_t server_id, uint16_t conn_id, ssaps_re
 {
     osal_printk("[speed server] ssaps read request cbk server_id:0x%x, conn_id:0x%x, handle:0x%x, status:0x%x\r\n",
         server_id, conn_id, read_cb_para->handle, status);
+    osal_printk("[speed server] READ_REQUEST_RECEIVED, creating send data thread...\r\n");
     osal_task *task_handle = NULL;
     osal_kthread_lock();
     task_handle = osal_kthread_create((osal_kthread_handler)send_data_thread_function,
@@ -103,6 +104,13 @@ static void ssaps_write_request_cbk(uint8_t server_id, uint16_t conn_id, ssaps_r
 {
     osal_printk("[speed server] ssaps write request cbk server_id:%d, conn_id:%d, handle:%d, status:%d\r\n",
         server_id, conn_id, write_cb_para->handle, status);
+    if (write_cb_para->value != NULL && write_cb_para->length > 0) {
+        osal_printk("[speed server] received client data, len:%d, data:\r\n", write_cb_para->length);
+        for (uint16_t i = 0; i < write_cb_para->length; i++) {
+            osal_printk("0x%02x ", write_cb_para->value[i]);
+        }
+        osal_printk("\r\n");
+    }
 }
 
 static void ssaps_mtu_changed_cbk(uint8_t server_id, uint16_t conn_id,  ssap_exchange_info_t *mtu_size,
@@ -168,6 +176,7 @@ uint8_t sle_flow_ctrl_flag(void)
 
 void send_data_thread_function(void)
 {
+    osal_printk("[speed server] SEND_DATA_THREAD_ENTERED, conn_hdl:0x%02x\r\n", g_sle_conn_hdl);
     sle_set_data_len(g_sle_conn_hdl, DEFAULT_SLE_SPEED_DATA_LEN);
 #ifdef CONFIG_LARGE_THROUGHPUT_SERVER
 #define DEFAULT_SLE_SPEED_MCS 10
@@ -305,6 +314,8 @@ static void sle_connect_state_changed_cbk(uint16_t conn_id, const sle_addr_t *ad
     parame.max_latency = 0;
     parame.supervision_timeout = SPEED_DEFAULT_TIMEOUT_MULTIPLIER;
     if (conn_state ==  SLE_ACB_STATE_CONNECTED) {
+        osal_printk("[speed server] SLE CONNECTED SUCCESS! conn_id:0x%02x, addr:0x%02x:**:**:**:0x%02x:0x%02x\r\n",
+            conn_id, addr->addr[BT_INDEX_0], addr->addr[BT_INDEX_4], addr->addr[BT_INDEX_5]);
         sle_update_connect_param(&parame);
     } else if (conn_state == SLE_ACB_STATE_DISCONNECTED) {
         sle_start_announce(SLE_ADV_HANDLE_DEFAULT);
@@ -401,6 +412,7 @@ void sle_speed_server_set_nv(void)
 
 void sle_enable_server_cbk(void)
 {
+    osal_printk("[speed server] SLE_ENABLE_SERVER_CBK_ENTERED\r\n");
     sle_speed_server_set_nv();
     sle_uuid_server_add();
     sle_ssaps_set_info();
@@ -415,6 +427,7 @@ void sle_enable_server_cbk(void)
 /* 初始化speed server */
 errcode_t sle_speed_server_init(void)
 {
+    osal_printk("[speed server] SLE_SPEED_SERVER_INIT_ENTERED\r\n");
     uapi_watchdog_disable();
     sle_announce_register_cbks();
     sle_conn_register_cbks();
@@ -437,6 +450,7 @@ int sle_speed_init(void)
 
 static void sle_speed_entry(void)
 {
+    osal_printk("===================[sle_speed_entry] start\r\n");
     osal_task *task_handle1 = NULL;
     osal_kthread_lock();
     task_handle1= osal_kthread_create((osal_kthread_handler)sle_speed_init, 0, "speed", SPEED_DEFAULT_KTHREAD_SIZE);
@@ -445,6 +459,9 @@ static void sle_speed_entry(void)
         osal_kfree(task_handle1);
     }
     osal_kthread_unlock();
+
+    osal_printk("===================[sle_speed_entry] end\r\n");
+
 }
 
 /* Run the blinky_entry. */

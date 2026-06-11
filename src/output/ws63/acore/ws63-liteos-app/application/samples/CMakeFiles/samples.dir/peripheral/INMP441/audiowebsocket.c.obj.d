@@ -161,4 +161,5 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.o
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/kernel/include/los_lockdep.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/arch/riscv/include/arch/spinlock.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/kernel/include/los_event.h \
- /home/hb/bearpi/fbb_ws63/src/open_source/lwip/lwip_v2.1.3/src/include/lwip/netdb.h
+ /home/hb/bearpi/fbb_ws63/src/open_source/lwip/lwip_v2.1.3/src/include/lwip/netdb.h \
+ /home/hb/bearpi/fbb_ws63/src/open_source/cjson/cjson/cJSON.h

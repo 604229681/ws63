@@ -2603,7 +2603,6 @@ open_source/all: open_source/libboundscheck/all
 open_source/all: open_source/cjson/all
 open_source/all: open_source/mqtt/all
 open_source/all: open_source/opus/all
-open_source/all: open_source/libwebsockets/all
 open_source/all: open_source/lwip/all
 .PHONY : open_source/all
 
@@ -2613,7 +2612,6 @@ open_source/preinstall: open_source/libboundscheck/preinstall
 open_source/preinstall: open_source/cjson/preinstall
 open_source/preinstall: open_source/mqtt/preinstall
 open_source/preinstall: open_source/opus/preinstall
-open_source/preinstall: open_source/libwebsockets/preinstall
 open_source/preinstall: open_source/lwip/preinstall
 .PHONY : open_source/preinstall
 
@@ -2623,7 +2621,6 @@ open_source/clean: open_source/libboundscheck/clean
 open_source/clean: open_source/cjson/clean
 open_source/clean: open_source/mqtt/clean
 open_source/clean: open_source/opus/clean
-open_source/clean: open_source/libwebsockets/clean
 open_source/clean: open_source/lwip/clean
 .PHONY : open_source/clean
 
@@ -2671,21 +2668,6 @@ open_source/libboundscheck/preinstall:
 # Recursive "clean" directory target.
 open_source/libboundscheck/clean: open_source/libboundscheck/CMakeFiles/libboundscheck.dir/clean
 .PHONY : open_source/libboundscheck/clean
-
-#=============================================================================
-# Directory level rules for directory open_source/libwebsockets
-
-# Recursive "all" directory target.
-open_source/libwebsockets/all:
-.PHONY : open_source/libwebsockets/all
-
-# Recursive "preinstall" directory target.
-open_source/libwebsockets/preinstall:
-.PHONY : open_source/libwebsockets/preinstall
-
-# Recursive "clean" directory target.
-open_source/libwebsockets/clean:
-.PHONY : open_source/libwebsockets/clean
 
 #=============================================================================
 # Directory level rules for directory open_source/lwip

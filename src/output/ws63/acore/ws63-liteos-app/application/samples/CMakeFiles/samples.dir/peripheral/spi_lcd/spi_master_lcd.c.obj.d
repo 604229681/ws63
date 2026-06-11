@@ -68,4 +68,5 @@ application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.o
  /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/memory/osal_cache.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_completion.h \
  /home/hb/bearpi/fbb_ws63/src/middleware/utils/app_init/app_init.h \
- /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.h
+ /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.h \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/prompt_image.h

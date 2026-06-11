@@ -461,8 +461,6 @@
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/mqtt/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/opus/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/opus/CMakeFiles/rebuild_cache.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/libwebsockets/CMakeFiles/edit_cache.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/libwebsockets/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/lwip/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/open_source/lwip/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-loaderboot/protocol/CMakeFiles/edit_cache.dir

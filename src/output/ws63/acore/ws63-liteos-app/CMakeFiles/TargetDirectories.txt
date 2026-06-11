@@ -104,7 +104,6 @@
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_coap.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_mqtt.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_opus.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_libwebsockets.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_hal_i2c.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_i2c.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles/HSO_DB_i2c_porting.dir
@@ -130,6 +129,14 @@
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/CMakeFiles/samples.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/CMakeFiles/rebuild_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/CMakeFiles/edit_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/CMakeFiles/rebuild_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/sle/CMakeFiles/edit_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/sle/CMakeFiles/rebuild_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/sle/sle_speed_server/CMakeFiles/edit_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/sle/sle_speed_server/CMakeFiles/rebuild_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/sle/sle_speed_server/src/CMakeFiles/edit_cache.dir
+/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/sle/sle_speed_server/src/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/INMP441/CMakeFiles/edit_cache.dir
@@ -678,9 +685,6 @@
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/opus/CMakeFiles/opus.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/opus/CMakeFiles/edit_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/opus/CMakeFiles/rebuild_cache.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/libwebsockets/CMakeFiles/libwebsockets.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/libwebsockets/CMakeFiles/edit_cache.dir
-/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/libwebsockets/CMakeFiles/rebuild_cache.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/lwip/CMakeFiles/lwip.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/lwip/CMakeFiles/lwip_tcm.dir
 /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/open_source/lwip/CMakeFiles/edit_cache.dir

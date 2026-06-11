@@ -39,6 +39,7 @@ void st7789_draw_string(uint16_t x, uint16_t y, const char *str, const LCD_FontD
 void st7789_draw_chinese_string(uint16_t x, uint16_t y, const char *str, uint16_t fg, uint16_t bg);
 void st7789_set_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
 void st7789_draw_image(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t *data);
+void st7789_draw_1bpp_image(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint8_t *data, uint16_t fg, uint16_t bg);
 
 typedef enum {
     EMOJI_SMILE,

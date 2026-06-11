@@ -68,6 +68,8 @@ include CMakeFiles/HSO_DB_samples.dir/progress.make
 
 CMakeFiles/HSO_DB_samples: hso_temp/samples.txt
 
+hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server_adv.c
+hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server.c
 hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c
 hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c
 hso_temp/samples.txt: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c

@@ -95,6 +95,7 @@ static void ssaps_read_request_cbk(uint8_t server_id,
 {
     osal_printk("[speed server] ssaps read request cbk server_id:%x, conn_id:%x, handle:%x, status:%x\r\n", server_id,
                 conn_id, read_cb_para->handle, status);
+    osal_printk("[speed server] READ_REQUEST_RECEIVED, creating send data thread...\r\n");
     osal_task *task_handle = NULL;
     osal_kthread_lock();
     task_handle = osal_kthread_create((osal_kthread_handler)send_data_thread_function, 0, "RadarTask",
@@ -108,12 +109,19 @@ static void ssaps_read_request_cbk(uint8_t server_id,
 }
 
 static void ssaps_write_request_cbk(uint8_t server_id,
-                                    uint16_t conn_id,
-                                    ssaps_req_write_cb_t *write_cb_para,
-                                    errcode_t status)
+                                     uint16_t conn_id,
+                                     ssaps_req_write_cb_t *write_cb_para,
+                                     errcode_t status)
 {
     osal_printk("[speed server] ssaps write request cbk server_id:%d, conn_id:%d, handle:%d, status:%d\r\n", server_id,
                 conn_id, write_cb_para->handle, status);
+    if (write_cb_para->value != NULL && write_cb_para->length > 0) {
+        osal_printk("[speed server] received client data, len:%d, data:\r\n", write_cb_para->length);
+        for (uint16_t i = 0; i < write_cb_para->length; i++) {
+            osal_printk("0x%02x ", write_cb_para->value[i]);
+        }
+        osal_printk("\r\n");
+    }
 }
 
 static void ssaps_mtu_changed_cbk(uint8_t server_id, uint16_t conn_id, ssap_exchange_info_t *mtu_size, errcode_t status)
@@ -177,6 +185,7 @@ uint8_t sle_flow_ctrl_flag(void)
 
 void send_data_thread_function(void)
 {
+    osal_printk("[speed server] SEND_DATA_THREAD_ENTERED, conn_hdl:0x%02x\r\n", g_sle_conn_hdl);
     sle_set_data_len(g_sle_conn_hdl, DEFAULT_SLE_SPEED_DATA_LEN);
 #ifdef CONFIG_LARGE_THROUGHPUT_SERVER
 #define DEFAULT_SLE_SPEED_MCS 10
@@ -319,8 +328,12 @@ static void sle_connect_state_changed_cbk(uint16_t conn_id,
     parame.max_latency = 0;
     parame.supervision_timeout = SPEED_DEFAULT_TIMEOUT_MULTIPLIER;
     if (conn_state == SLE_ACB_STATE_CONNECTED) {
+        osal_printk("[speed server] SLE CONNECTED SUCCESS! conn_id:0x%02x, addr:%02x:**:**:**:%02x:%02x\r\n",
+                    conn_id, addr->addr[BT_INDEX_0], addr->addr[BT_INDEX_4], addr->addr[BT_INDEX_5]);
         sle_update_connect_param(&parame);
     } else if (conn_state == SLE_ACB_STATE_DISCONNECTED) {
+        osal_printk("[speed server] SLE DISCONNECTED! conn_id:0x%02x, addr:%02x:**:**:**:%02x:%02x, disc_reason:0x%x\r\n",
+                    conn_id, addr->addr[BT_INDEX_0], addr->addr[BT_INDEX_4], addr->addr[BT_INDEX_5], disc_reason);
         sle_start_announce(SLE_ADV_HANDLE_DEFAULT);
     }
 }
@@ -408,6 +421,7 @@ void sle_speed_server_set_nv(void)
 /* 初始化speed server */
 errcode_t sle_speed_server_init(void)
 {
+    osal_printk("[speed server] SLE_SPEED_SERVER_INIT_ENTERED\r\n");
     uapi_watchdog_disable();
     enable_sle();
     printf("sle enable\r\n");

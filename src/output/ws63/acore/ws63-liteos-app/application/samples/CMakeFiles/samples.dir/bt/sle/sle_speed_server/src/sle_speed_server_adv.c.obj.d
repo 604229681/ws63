@@ -1,0 +1,34 @@
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj: \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server_adv.c \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/mconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/kernel/liteos/liteos_v208.5.0/menuconfig/include/menuconfig.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/platform/libsec/include/securec.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/platform/libsec/include/securectype.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdio.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/features.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/bits/alltypes.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/string.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/strings.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdlib.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/malloc.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/alloca.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stddef.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdarg.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/generic/bits/errno.h \
+ /home/hb/bearpi/fbb_ws63/src/include/errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/arch/riscv32/bits/stdint.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/memory/osal_addr.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/debug/osal_debug.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_common.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_device_discovery.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_common.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_connection_manager.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_low_latency.h \
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/stdbool.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_errcode.h \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/inc/sle_speed_server.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_ssap_server.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/bts/sle/sle_ssap_stru.h \
+ /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/inc/sle_speed_server_adv.h

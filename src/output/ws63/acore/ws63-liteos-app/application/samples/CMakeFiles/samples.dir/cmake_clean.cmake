@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj"
+  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj.d"
+  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj"
+  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj.d"
   "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj"
   "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj.d"
   "CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj"

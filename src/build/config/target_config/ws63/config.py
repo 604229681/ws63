@@ -90,7 +90,6 @@ target = {
             "sle_netdev",
             "mqtt",
             "opus",
-            "libwebsockets",
         ],
         'ccflags': [
             "-DBOARD_ASIC", '-DPRE_ASIC',

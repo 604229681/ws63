@@ -384,6 +384,29 @@ void st7789_draw_image(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uin
     }
 }
 
+void st7789_draw_1bpp_image(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint8_t *data, uint16_t fg, uint16_t bg)
+{
+    if (x + w > ST7789_WIDTH || y + h > ST7789_HEIGHT) {
+        return;
+    }
+    st7789_set_window(x, y, x + w - 1, y + h - 1);
+    
+    uint32_t bytes_per_row = (w + 7) / 8;
+    uint8_t buf[240 * 2] __attribute__((aligned(4)));
+    
+    for (uint16_t row = 0; row < h; row++) {
+        uint32_t buf_idx = 0;
+        for (uint16_t col = 0; col < w; col++) {
+            uint32_t byte_idx = row * bytes_per_row + col / 8;
+            uint8_t bit_idx = 7 - (col % 8);
+            uint16_t color = (data[byte_idx] & (1 << bit_idx)) ? fg : bg;
+            buf[buf_idx++] = (color >> 8) & 0xFF;
+            buf[buf_idx++] = color & 0xFF;
+        }
+        lcd_write_data_buf(buf, buf_idx);
+    }
+}
+
 void st7789_show_emoji(emoji_type_t type)
 {
     const uint16_t *data = NULL;

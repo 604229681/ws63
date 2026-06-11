@@ -196,7 +196,6 @@ ws63-liteos-app.elf: utils/mips/libmips.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/interim_binary/ws63/libs/wifi/ws63-liteos-app/libcjson.a
 ws63-liteos-app.elf: open_source/mqtt/libmqtt.a
 ws63-liteos-app.elf: open_source/opus/libopus.a
-ws63-liteos-app.elf: open_source/libwebsockets/liblibwebsockets.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/interim_binary/ws63/libs/wifi/ws63-liteos-app/liblwip.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/interim_binary/ws63/libs/wifi/ws63-liteos-app/liblwip_tcm.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/protocol/wifi/ws63-liteos-app/libwifi_driver_dmac.a

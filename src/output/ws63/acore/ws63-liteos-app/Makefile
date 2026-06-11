@@ -1495,19 +1495,6 @@ HSO_DB_opus/fast:
 .PHONY : HSO_DB_opus/fast
 
 #=============================================================================
-# Target rules for targets named HSO_DB_libwebsockets
-
-# Build rule for target.
-HSO_DB_libwebsockets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HSO_DB_libwebsockets
-.PHONY : HSO_DB_libwebsockets
-
-# fast build rule for target.
-HSO_DB_libwebsockets/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HSO_DB_libwebsockets.dir/build.make CMakeFiles/HSO_DB_libwebsockets.dir/build
-.PHONY : HSO_DB_libwebsockets/fast
-
-#=============================================================================
 # Target rules for targets named HSO_DB_hal_i2c
 
 # Build rule for target.
@@ -2923,19 +2910,6 @@ opus: cmake_check_build_system
 opus/fast:
 	$(MAKE) $(MAKESILENT) -f open_source/opus/CMakeFiles/opus.dir/build.make open_source/opus/CMakeFiles/opus.dir/build
 .PHONY : opus/fast
-
-#=============================================================================
-# Target rules for targets named libwebsockets
-
-# Build rule for target.
-libwebsockets: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libwebsockets
-.PHONY : libwebsockets
-
-# fast build rule for target.
-libwebsockets/fast:
-	$(MAKE) $(MAKESILENT) -f open_source/libwebsockets/CMakeFiles/libwebsockets.dir/build.make open_source/libwebsockets/CMakeFiles/libwebsockets.dir/build
-.PHONY : libwebsockets/fast
 
 #=============================================================================
 # Target rules for targets named lwip
@@ -8283,7 +8257,6 @@ help:
 	@echo "... HSO_DB_i2c"
 	@echo "... HSO_DB_i2c_porting"
 	@echo "... HSO_DB_i2s"
-	@echo "... HSO_DB_libwebsockets"
 	@echo "... HSO_DB_liteos_port"
 	@echo "... HSO_DB_log_file"
 	@echo "... HSO_DB_lpm"
@@ -8389,7 +8362,6 @@ help:
 	@echo "... i2c"
 	@echo "... i2c_porting"
 	@echo "... i2s"
-	@echo "... libwebsockets"
 	@echo "... liteos_port"
 	@echo "... log_file"
 	@echo "... lpm"

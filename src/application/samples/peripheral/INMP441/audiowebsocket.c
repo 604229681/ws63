@@ -5,6 +5,22 @@
 #include <time.h>
 #include "lwip/sockets.h"
 #include "lwip/netdb.h"
+#include "cJSON.h"
+
+typedef struct {
+    uint16_t year;
+    uint8_t month;
+    uint8_t day;
+    uint8_t weekday; // 1-7 (1=Mon, 7=Sun)
+    uint8_t hour;
+    uint8_t min;
+    uint8_t sec;
+} sw_rtc_t;
+
+extern volatile sw_rtc_t g_current_time;
+extern volatile int g_current_emotion;
+extern volatile int g_emotion_updated;
+extern volatile int g_time_updated;
 
 // TODO: Change this to your WebSocket server's IP address on the WiFi network
 // Example: If your computer running the server has IP 192.168.1.100, use that
@@ -234,8 +250,49 @@ static void *ws_recv_task(const char *arg)
                 break;
 
             case WS_OPCODE_TEXT:
-                // Ignore text or log it
-                // if (payload_len > 0) osal_printk("[WS] Text: %.*s\r\n", (int)payload_len, payload_buf);
+                if (payload_len > 0) {
+                    char *json_str = malloc(payload_len + 1);
+                    if (json_str) {
+                        memcpy(json_str, payload_buf, payload_len);
+                        json_str[payload_len] = '\0';
+                        
+                        cJSON *root = cJSON_Parse(json_str);
+                        if (root) {
+                            cJSON *cmd = cJSON_GetObjectItem(root, "cmd");
+                            if (cmd && cmd->valuestring && strcmp(cmd->valuestring, "sync_state") == 0) {
+                                cJSON *data = cJSON_GetObjectItem(root, "data");
+                                if (data) {
+                                    cJSON *emotion = cJSON_GetObjectItem(data, "emotion");
+                                    if (emotion) {
+                                        g_current_emotion = emotion->valueint;
+                                        g_emotion_updated = 1;
+                                    }
+                                    cJSON *datetime = cJSON_GetObjectItem(data, "datetime");
+                                    if (datetime) {
+                                        cJSON *year = cJSON_GetObjectItem(datetime, "year");
+                                        cJSON *month = cJSON_GetObjectItem(datetime, "month");
+                                        cJSON *day = cJSON_GetObjectItem(datetime, "day");
+                                        cJSON *weekday = cJSON_GetObjectItem(datetime, "weekday");
+                                        cJSON *hour = cJSON_GetObjectItem(datetime, "hour");
+                                        cJSON *minute = cJSON_GetObjectItem(datetime, "minute");
+                                        cJSON *second = cJSON_GetObjectItem(datetime, "second");
+                                        
+                                        if (year) g_current_time.year = year->valueint;
+                                        if (month) g_current_time.month = month->valueint;
+                                        if (day) g_current_time.day = day->valueint;
+                                        if (weekday) g_current_time.weekday = weekday->valueint;
+                                        if (hour) g_current_time.hour = hour->valueint;
+                                        if (minute) g_current_time.min = minute->valueint;
+                                        if (second) g_current_time.sec = second->valueint;
+                                        g_time_updated = 1;
+                                    }
+                                }
+                            }
+                            cJSON_Delete(root);
+                        }
+                        free(json_str);
+                    }
+                }
                 break;
 
             case WS_OPCODE_PONG:

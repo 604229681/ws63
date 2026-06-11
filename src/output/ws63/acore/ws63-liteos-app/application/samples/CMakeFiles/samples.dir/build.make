@@ -69,10 +69,38 @@ include application/samples/CMakeFiles/samples.dir/progress.make
 # Include the compile flags for this target's objects.
 include application/samples/CMakeFiles/samples.dir/flags.make
 
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server_adv.c
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SLE_SPEED_SERVER_ADV_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj -MF CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj.d -o CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server_adv.c
+
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SLE_SPEED_SERVER_ADV_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -E /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server_adv.c > CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i
+
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SLE_SPEED_SERVER_ADV_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -S /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server_adv.c -o CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s
+
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server.c
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SLE_SPEED_SERVER_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj -MF CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj.d -o CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server.c
+
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.i"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SLE_SPEED_SERVER_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -E /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server.c > CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.i
+
+application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.s"
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SLE_SPEED_SERVER_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -S /home/hb/bearpi/fbb_ws63/src/application/samples/bt/sle/sle_speed_server/src/sle_speed_server.c -o CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.s
+
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=INMP441_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj -MF CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj.d -o CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/INMP441.c
 
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.i: cmake_force
@@ -86,7 +114,7 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.s: cmake
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=AUDIOWEBSOCKET_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj -MF CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj.d -o CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/audiowebsocket.c
 
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.i: cmake_force
@@ -100,7 +128,7 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.s
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=WLAN_HOTSPOT_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj -MF CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj.d -o CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/INMP441/wlan_hotspot.c
 
 application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.i: cmake_force
@@ -114,7 +142,7 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.s: 
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=SPI_MASTER_LCD_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj -MF CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj.d -o CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/spi_master_lcd.c
 
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.i: cmake_force
@@ -128,7 +156,7 @@ application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.s
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=ST7789_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj -MF CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj.d -o CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/st7789.c
 
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.i: cmake_force
@@ -142,7 +170,7 @@ application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.s: cmake_
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj: application/samples/CMakeFiles/samples.dir/flags.make
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj: /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj: application/samples/CMakeFiles/samples.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && ccache /home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-gcc $(C_DEFINES) -DTHIS_FILE_ID=LCD_FONTS_C -DTHIS_MOD_ID=LOG_PFMODULE $(C_INCLUDES) $(C_FLAGS) -MD -MT application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj -MF CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj.d -o CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj -c /home/hb/bearpi/fbb_ws63/src/application/samples/peripheral/spi_lcd/lcd_fonts.c
 
 application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.i: cmake_force
@@ -155,6 +183,8 @@ application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.s: cma
 
 # Object files for target samples
 samples_OBJECTS = \
+"CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj" \
+"CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj" \
 "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj" \
 "CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj" \
 "CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj" \
@@ -165,6 +195,8 @@ samples_OBJECTS = \
 # External object files for target samples
 samples_EXTERNAL_OBJECTS =
 
+application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj
+application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj
@@ -173,7 +205,7 @@ application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/per
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/lcd_fonts.c.obj
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/build.make
 application/samples/libsamples.a: application/samples/CMakeFiles/samples.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libsamples.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libsamples.a"
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && $(CMAKE_COMMAND) -P CMakeFiles/samples.dir/cmake_clean_target.cmake
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/samples.dir/link.txt --verbose=$(VERBOSE)
 
