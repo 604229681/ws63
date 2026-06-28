@@ -130,54 +130,6 @@ samples/fast:
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/build
 .PHONY : samples/fast
 
-bt/sle/sle_speed_server/src/sle_speed_server.obj: bt/sle/sle_speed_server/src/sle_speed_server.c.obj
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server.obj
-
-# target to build an object file
-bt/sle/sle_speed_server/src/sle_speed_server.c.obj:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server.c.obj
-
-bt/sle/sle_speed_server/src/sle_speed_server.i: bt/sle/sle_speed_server/src/sle_speed_server.c.i
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server.i
-
-# target to preprocess a source file
-bt/sle/sle_speed_server/src/sle_speed_server.c.i:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.i
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server.c.i
-
-bt/sle/sle_speed_server/src/sle_speed_server.s: bt/sle/sle_speed_server/src/sle_speed_server.c.s
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server.s
-
-# target to generate assembly for a file
-bt/sle/sle_speed_server/src/sle_speed_server.c.s:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.s
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server.c.s
-
-bt/sle/sle_speed_server/src/sle_speed_server_adv.obj: bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server_adv.obj
-
-# target to build an object file
-bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj
-
-bt/sle/sle_speed_server/src/sle_speed_server_adv.i: bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server_adv.i
-
-# target to preprocess a source file
-bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server_adv.c.i
-
-bt/sle/sle_speed_server/src/sle_speed_server_adv.s: bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server_adv.s
-
-# target to generate assembly for a file
-bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s:
-	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s
-.PHONY : bt/sle/sle_speed_server/src/sle_speed_server_adv.c.s
-
 peripheral/INMP441/INMP441.obj: peripheral/INMP441/INMP441.c.obj
 .PHONY : peripheral/INMP441/INMP441.obj
 
@@ -322,6 +274,30 @@ peripheral/spi_lcd/st7789.c.s:
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.s
 .PHONY : peripheral/spi_lcd/st7789.c.s
 
+radar/sta_sample/radar_sta_sample.obj: radar/sta_sample/radar_sta_sample.c.obj
+.PHONY : radar/sta_sample/radar_sta_sample.obj
+
+# target to build an object file
+radar/sta_sample/radar_sta_sample.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/radar/sta_sample/radar_sta_sample.c.obj
+.PHONY : radar/sta_sample/radar_sta_sample.c.obj
+
+radar/sta_sample/radar_sta_sample.i: radar/sta_sample/radar_sta_sample.c.i
+.PHONY : radar/sta_sample/radar_sta_sample.i
+
+# target to preprocess a source file
+radar/sta_sample/radar_sta_sample.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/radar/sta_sample/radar_sta_sample.c.i
+.PHONY : radar/sta_sample/radar_sta_sample.c.i
+
+radar/sta_sample/radar_sta_sample.s: radar/sta_sample/radar_sta_sample.c.s
+.PHONY : radar/sta_sample/radar_sta_sample.s
+
+# target to generate assembly for a file
+radar/sta_sample/radar_sta_sample.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f application/samples/CMakeFiles/samples.dir/build.make application/samples/CMakeFiles/samples.dir/radar/sta_sample/radar_sta_sample.c.s
+.PHONY : radar/sta_sample/radar_sta_sample.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -331,12 +307,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... samples"
-	@echo "... bt/sle/sle_speed_server/src/sle_speed_server.obj"
-	@echo "... bt/sle/sle_speed_server/src/sle_speed_server.i"
-	@echo "... bt/sle/sle_speed_server/src/sle_speed_server.s"
-	@echo "... bt/sle/sle_speed_server/src/sle_speed_server_adv.obj"
-	@echo "... bt/sle/sle_speed_server/src/sle_speed_server_adv.i"
-	@echo "... bt/sle/sle_speed_server/src/sle_speed_server_adv.s"
 	@echo "... peripheral/INMP441/INMP441.obj"
 	@echo "... peripheral/INMP441/INMP441.i"
 	@echo "... peripheral/INMP441/INMP441.s"
@@ -355,6 +325,9 @@ help:
 	@echo "... peripheral/spi_lcd/st7789.obj"
 	@echo "... peripheral/spi_lcd/st7789.i"
 	@echo "... peripheral/spi_lcd/st7789.s"
+	@echo "... radar/sta_sample/radar_sta_sample.obj"
+	@echo "... radar/sta_sample/radar_sta_sample.i"
+	@echo "... radar/sta_sample/radar_sta_sample.s"
 .PHONY : help
 
 

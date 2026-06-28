@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/bt/cmake_install.cmake")
+  include("/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/peripheral/cmake_install.cmake")
+  include("/home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app/application/samples/radar/cmake_install.cmake")
 endif()
 

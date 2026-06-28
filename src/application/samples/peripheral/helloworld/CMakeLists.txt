@@ -15,8 +15,8 @@ set(COMPONENT_PUBLIC_CCFLAGS "${COMPONENT_PUBLIC_CCFLAGS}" "-DLWS_ROLE_H1" "-DLW
 # 添加编译选项以抑制未使用变量的警告
 set(COMPONENT_CCFLAGS "${COMPONENT_CCFLAGS}" "-Wno-unused-variable" PARENT_SCOPE)
 
-# 链接 opus 组件
-set(DEPENDENCIES "${DEPENDENCIES}" opus PARENT_SCOPE)
+# 链接 opus 和 littlefs_adapt_ws63 组件
+set(DEPENDENCIES "${DEPENDENCIES}" opus littlefs_adapt_ws63 PARENT_SCOPE)
 
 # Ensure websocket sample is built alongside STA sample so test_websocket_task is linked
 #set(SOURCES "${SOURCES}" "${CMAKE_CURRENT_SOURCE_DIR}/sta_sample.c" "${CMAKE_CURRENT_SOURCE_DIR}/testwebsocket.c" PARENT_SCOPE)

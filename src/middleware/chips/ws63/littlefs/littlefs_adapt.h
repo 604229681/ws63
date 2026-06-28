@@ -34,6 +34,7 @@ int fs_adapt_sync(int fd);
 int fs_adapt_mkdir(const char *path);
 
 void lfs_test(void);
+void fs_adapt_print_info(void);
 
 #ifdef __cplusplus
 #if __cplusplus

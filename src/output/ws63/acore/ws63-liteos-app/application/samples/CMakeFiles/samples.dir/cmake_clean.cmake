@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj"
-  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server.c.obj.d"
-  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj"
-  "CMakeFiles/samples.dir/bt/sle/sle_speed_server/src/sle_speed_server_adv.c.obj.d"
   "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj"
   "CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj.d"
   "CMakeFiles/samples.dir/peripheral/INMP441/audiowebsocket.c.obj"
@@ -15,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/samples.dir/peripheral/spi_lcd/spi_master_lcd.c.obj.d"
   "CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj"
   "CMakeFiles/samples.dir/peripheral/spi_lcd/st7789.c.obj.d"
+  "CMakeFiles/samples.dir/radar/sta_sample/radar_sta_sample.c.obj"
+  "CMakeFiles/samples.dir/radar/sta_sample/radar_sta_sample.c.obj.d"
   "libsamples.a"
   "libsamples.pdb"
 )

@@ -55,7 +55,8 @@ CMAKE_ADDR2LINE:FILEPATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/c
 
 CMAKE_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-ar
 
-CMAKE_ASM_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-gcc
+//ASM compiler
+CMAKE_ASM_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-gcc
 
 CMAKE_ASM_COMPILER_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-ar
 
@@ -83,7 +84,8 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-CMAKE_CXX_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-g++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -108,7 +110,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-CMAKE_C_COMPILER:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-gcc
+//C compiler
+CMAKE_C_COMPILER:STRING=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-gcc
 
 CMAKE_C_COMPILER_AR:PATH=/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl/bin/riscv32-linux-musl-ar
 

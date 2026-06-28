@@ -118,6 +118,8 @@
     func(*libsle_netdev.a:*.o) \
     func(*libmqtt.a:*.o) \
     func(*libopus.a:*.o) \
+    func(*liblittle_fs.a:*.o) \
+    func(*liblittlefs_adapt_ws63.a:*.o) \
     func(*libhal_i2c.a:*.o) \
     func(*libi2c.a:*.o) \
     func(*libi2c_porting.a:*.o) \

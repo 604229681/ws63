@@ -169,6 +169,7 @@ ws63-liteos-app.elf: middleware/chips/ws63/update/storage/libupdate_storage_ws63
 ws63-liteos-app.elf: middleware/chips/ws63/update/ab_upg/libupdate_ab_ws63.a
 ws63-liteos-app.elf: middleware/chips/ws63/mac_addr/libmac_addr_ws63.a
 ws63-liteos-app.elf: middleware/chips/ws63/factory/libfactory_ws63.a
+ws63-liteos-app.elf: middleware/chips/ws63/littlefs/liblittlefs_adapt_ws63.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/interim_binary/ws63/libs/wifi/ws63-liteos-app/libwifi_service.a
 ws63-liteos-app.elf: utils/algorithm/libalgorithm.a
 ws63-liteos-app.elf: utils/app_init/libapp_init.a
@@ -226,6 +227,7 @@ ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/protocol/radar/plat/ws63-liteo
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/protocol/bt/controller/chba/ws63-liteos-app/libsle_netdev.a
 ws63-liteos-app.elf: libgmssl_hmac_sm3.a
 ws63-liteos-app.elf: libmbedtls.a
+ws63-liteos-app.elf: liblittle_fs.a
 ws63-liteos-app.elf: libcoap.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/interim_binary/ws63/libs/wifi/ws63-liteos-app/libwpa_supplicant.a
 ws63-liteos-app.elf: /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/ws63-liteos-app/libm.a

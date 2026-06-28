@@ -169,6 +169,19 @@ mbedtls/fast:
 .PHONY : mbedtls/fast
 
 #=============================================================================
+# Target rules for targets named little_fs
+
+# Build rule for target.
+little_fs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 little_fs
+.PHONY : little_fs
+
+# fast build rule for target.
+little_fs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/build
+.PHONY : little_fs/fast
+
+#=============================================================================
 # Target rules for targets named coap
 
 # Build rule for target.
@@ -1495,6 +1508,32 @@ HSO_DB_opus/fast:
 .PHONY : HSO_DB_opus/fast
 
 #=============================================================================
+# Target rules for targets named HSO_DB_little_fs
+
+# Build rule for target.
+HSO_DB_little_fs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HSO_DB_little_fs
+.PHONY : HSO_DB_little_fs
+
+# fast build rule for target.
+HSO_DB_little_fs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HSO_DB_little_fs.dir/build.make CMakeFiles/HSO_DB_little_fs.dir/build
+.PHONY : HSO_DB_little_fs/fast
+
+#=============================================================================
+# Target rules for targets named HSO_DB_littlefs_adapt_ws63
+
+# Build rule for target.
+HSO_DB_littlefs_adapt_ws63: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HSO_DB_littlefs_adapt_ws63
+.PHONY : HSO_DB_littlefs_adapt_ws63
+
+# fast build rule for target.
+HSO_DB_littlefs_adapt_ws63/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HSO_DB_littlefs_adapt_ws63.dir/build.make CMakeFiles/HSO_DB_littlefs_adapt_ws63.dir/build
+.PHONY : HSO_DB_littlefs_adapt_ws63/fast
+
+#=============================================================================
 # Target rules for targets named HSO_DB_hal_i2c
 
 # Build rule for target.
@@ -2585,6 +2624,19 @@ factory_ws63: cmake_check_build_system
 factory_ws63/fast:
 	$(MAKE) $(MAKESILENT) -f middleware/chips/ws63/factory/CMakeFiles/factory_ws63.dir/build.make middleware/chips/ws63/factory/CMakeFiles/factory_ws63.dir/build
 .PHONY : factory_ws63/fast
+
+#=============================================================================
+# Target rules for targets named littlefs_adapt_ws63
+
+# Build rule for target.
+littlefs_adapt_ws63: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 littlefs_adapt_ws63
+.PHONY : littlefs_adapt_ws63
+
+# fast build rule for target.
+littlefs_adapt_ws63/fast:
+	$(MAKE) $(MAKESILENT) -f middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build.make middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build
+.PHONY : littlefs_adapt_ws63/fast
 
 #=============================================================================
 # Target rules for targets named wifi_service
@@ -3843,6 +3895,54 @@ open_source/libcoap/libcoap/src/coap_ws.s: open_source/libcoap/libcoap/src/coap_
 open_source/libcoap/libcoap/src/coap_ws.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coap.dir/build.make CMakeFiles/coap.dir/open_source/libcoap/libcoap/src/coap_ws.c.s
 .PHONY : open_source/libcoap/libcoap/src/coap_ws.c.s
+
+open_source/littlefs/v2.5.0/lfs.obj: open_source/littlefs/v2.5.0/lfs.c.obj
+.PHONY : open_source/littlefs/v2.5.0/lfs.obj
+
+# target to build an object file
+open_source/littlefs/v2.5.0/lfs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs.c.obj
+.PHONY : open_source/littlefs/v2.5.0/lfs.c.obj
+
+open_source/littlefs/v2.5.0/lfs.i: open_source/littlefs/v2.5.0/lfs.c.i
+.PHONY : open_source/littlefs/v2.5.0/lfs.i
+
+# target to preprocess a source file
+open_source/littlefs/v2.5.0/lfs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs.c.i
+.PHONY : open_source/littlefs/v2.5.0/lfs.c.i
+
+open_source/littlefs/v2.5.0/lfs.s: open_source/littlefs/v2.5.0/lfs.c.s
+.PHONY : open_source/littlefs/v2.5.0/lfs.s
+
+# target to generate assembly for a file
+open_source/littlefs/v2.5.0/lfs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs.c.s
+.PHONY : open_source/littlefs/v2.5.0/lfs.c.s
+
+open_source/littlefs/v2.5.0/lfs_util.obj: open_source/littlefs/v2.5.0/lfs_util.c.obj
+.PHONY : open_source/littlefs/v2.5.0/lfs_util.obj
+
+# target to build an object file
+open_source/littlefs/v2.5.0/lfs_util.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs_util.c.obj
+.PHONY : open_source/littlefs/v2.5.0/lfs_util.c.obj
+
+open_source/littlefs/v2.5.0/lfs_util.i: open_source/littlefs/v2.5.0/lfs_util.c.i
+.PHONY : open_source/littlefs/v2.5.0/lfs_util.i
+
+# target to preprocess a source file
+open_source/littlefs/v2.5.0/lfs_util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs_util.c.i
+.PHONY : open_source/littlefs/v2.5.0/lfs_util.c.i
+
+open_source/littlefs/v2.5.0/lfs_util.s: open_source/littlefs/v2.5.0/lfs_util.c.s
+.PHONY : open_source/littlefs/v2.5.0/lfs_util.s
+
+# target to generate assembly for a file
+open_source/littlefs/v2.5.0/lfs_util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/little_fs.dir/build.make CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs_util.c.s
+.PHONY : open_source/littlefs/v2.5.0/lfs_util.c.s
 
 open_source/mbedtls/mbedtls_v3.1.0/harden/src/bignum_harden.obj: open_source/mbedtls/mbedtls_v3.1.0/harden/src/bignum_harden.c.obj
 .PHONY : open_source/mbedtls/mbedtls_v3.1.0/harden/src/bignum_harden.obj
@@ -8258,6 +8358,8 @@ help:
 	@echo "... HSO_DB_i2c_porting"
 	@echo "... HSO_DB_i2s"
 	@echo "... HSO_DB_liteos_port"
+	@echo "... HSO_DB_little_fs"
+	@echo "... HSO_DB_littlefs_adapt_ws63"
 	@echo "... HSO_DB_log_file"
 	@echo "... HSO_DB_lpm"
 	@echo "... HSO_DB_lwip"
@@ -8363,6 +8465,8 @@ help:
 	@echo "... i2c_porting"
 	@echo "... i2s"
 	@echo "... liteos_port"
+	@echo "... little_fs"
+	@echo "... littlefs_adapt_ws63"
 	@echo "... log_file"
 	@echo "... lpm"
 	@echo "... lwip"
@@ -8522,6 +8626,12 @@ help:
 	@echo "... open_source/libcoap/libcoap/src/coap_ws.obj"
 	@echo "... open_source/libcoap/libcoap/src/coap_ws.i"
 	@echo "... open_source/libcoap/libcoap/src/coap_ws.s"
+	@echo "... open_source/littlefs/v2.5.0/lfs.obj"
+	@echo "... open_source/littlefs/v2.5.0/lfs.i"
+	@echo "... open_source/littlefs/v2.5.0/lfs.s"
+	@echo "... open_source/littlefs/v2.5.0/lfs_util.obj"
+	@echo "... open_source/littlefs/v2.5.0/lfs_util.i"
+	@echo "... open_source/littlefs/v2.5.0/lfs_util.s"
 	@echo "... open_source/mbedtls/mbedtls_v3.1.0/harden/src/bignum_harden.obj"
 	@echo "... open_source/mbedtls/mbedtls_v3.1.0/harden/src/bignum_harden.i"
 	@echo "... open_source/mbedtls/mbedtls_v3.1.0/harden/src/bignum_harden.s"

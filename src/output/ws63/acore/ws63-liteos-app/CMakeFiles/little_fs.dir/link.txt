@@ -1,0 +1,1 @@
+/home/hb/bearpi/fbb_ws63/src/tools/bin/compiler/riscv/cc_riscv32_musl_105/cc_riscv32_musl_fp/bin/riscv32-linux-musl-ar rcD liblittle_fs.a CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs.c.obj CMakeFiles/little_fs.dir/open_source/littlefs/v2.5.0/lfs_util.c.obj

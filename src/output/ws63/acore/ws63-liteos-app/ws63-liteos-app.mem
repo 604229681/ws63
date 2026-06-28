@@ -24,7 +24,7 @@
     .btc_bss_tcm      0x00183630                    28                  
     .wifi_bss_tcm     0x00183650                   956                  
   
-  SRAM                0x00A00000     0x85F00   0x3DB90 = 252816
+  SRAM                0x00A00000     0x85F00   0x3D7A0 = 251808
     .wifi_pkt_ram     0x00A00000                 49152                  
     .plat_text_sram   0x00A0C000                 10980 load address 0x234BE8
     .wifi_text_sram   0x00A0EAE8                     0                  
@@ -34,28 +34,28 @@
     .wifi_data_sram   0x00A0F5A0                     0                  
     .btc_data_sram    0x00A0F5A0                     0                  
     .bth_data_sram    0x00A0F5A0                     0                  
-    .btc_data_flash   0x00A0F5A0                  5024 load address 0x3AF570
-    .bth_data_flash   0x00A10940                  2544 load address 0x3B0910
-    .data             0x00A11330                   464 load address 0x3B1300
-    .plat_bss_sram    0x00A11500                  1217                  
-    .plat_bss_flash   0x00A119C8                 12692                  
-    .wifi_bss_flash   0x00A14B60                 38032                  
-    .radar_bss_flash  0x00A1DFF0                 40128                  
-    .radar_ai_bss_flash  0x00A27CB0                  6133                  
-    .btc_bss_flash    0x00A294A8                  3288                  
-    .bth_bss_flash    0x00A2A180                 70089                  
-    .bss              0x00A3B350                  5180                  
-    .stacks           0x00A3C790                  5120                  
-    .heap             0x00A3DB90                     0                  
+    .btc_data_flash   0x00A0F5A0                  5024 load address 0x3B2948
+    .bth_data_flash   0x00A10940                  2496 load address 0x3B3CE8
+    .data             0x00A11300                   552 load address 0x3B46A8
+    .plat_bss_sram    0x00A11530                  1217                  
+    .plat_bss_flash   0x00A119F8                 12692                  
+    .wifi_bss_flash   0x00A14B90                 38032                  
+    .radar_bss_flash  0x00A1E020                 40128                  
+    .radar_ai_bss_flash  0x00A27CE0                  6133                  
+    .btc_bss_flash    0x00A294D8                  3288                  
+    .bth_bss_flash    0x00A2A1B0                 68885                  
+    .bss              0x00A3AEC8                  5328                  
+    .stacks           0x00A3C3A0                  5120                  
+    .heap             0x00A3D7A0                     0                  
   
   PRESERVE_SHARE_MEM  0x00A85F00       0x100      0xFC = 252
     .preserve         0x00A85F00                   252                  
   
-  PROGRAM_STARTUP     0x00230300       0x400     0x1E4 = 484
-    startup           0x00230300                   432                  
-    .sysintcall.init  0x002304B0                    52                  
+  PROGRAM_STARTUP     0x00230300       0x400     0x1E0 = 480
+    startup           0x00230300                   428                  
+    .sysintcall.init  0x002304AC                    52                  
   
-  PROGRAM             0x00230700    0x23F900  0x180DD0 = 1576400
+  PROGRAM             0x00230700    0x23F900  0x1841D0 = 1589712
     .patch            0x00230700                  2344                  
     .rom_ram_cb_text  0x00231028                  1816                  
     .plat_romdata     0x00231740                   212                  
@@ -67,17 +67,17 @@
     .wifi_data_tcm    0x00233E80                  3432                  
     .plat_text_sram   0x00234BE8                 10980                  
     .patch_on_sram    0x002376D0                  2744                  
-    .plat_text_flash  0x00238190                189760                  
-    .wifi_text_flash  0x002666D0                587666                  
-    .patch_on_flash   0x002F5E68                  2378                  
-    .btc_text_flash   0x002F67B8                135908                  
-    .bth_text_flash   0x00317AA0                513200                  
-    .radar_text_flash  0x00394F50                 39408                  
-    .radar_ai_text_flash  0x0039E940                 10204                  
-    .text             0x003A1120                 58444                  
-    .btc_data_flash   0x003AF570                  5024                  
-    .bth_data_flash   0x003B0910                  2544                  
-    .data             0x003B1300                   464                  
+    .plat_text_flash  0x00238190                189944                  
+    .wifi_text_flash  0x00266788                587798                  
+    .patch_on_flash   0x002F5FA0                  2378                  
+    .btc_text_flash   0x002F68F0                135908                  
+    .bth_text_flash   0x00317BD8                512450                  
+    .radar_text_flash  0x00394DA0                 39968                  
+    .radar_ai_text_flash  0x0039E9C0                 10204                  
+    .text             0x003A11A0                 71592                  
+    .btc_data_flash   0x003B2948                  5024                  
+    .bth_data_flash   0x003B3CE8                  2496                  
+    .data             0x003B46A8                   552                  
 
   ====================================================
 
@@ -89,7 +89,7 @@
   --------------------------------  --------  -----
 
 
-  .plat_text_flash                    105607
+  .plat_text_flash                    105731
 
     open_source                        32734
       mbedtls                               
@@ -228,7 +228,7 @@
           uart                          1260
             uart                                  1260
 
-    devcloud                           28230
+    devcloud                           28332
       workspace                             
         cc_source                           
           open_source                       
@@ -261,7 +261,7 @@
                     truncdfsf2                     546
                     trunctfdf2                     872
 
-                  libgcc2                         4224
+                  libgcc2                         4326
 
     middleware                         31465
       utils                            27851
@@ -414,10 +414,10 @@
             common                          
               upg_common_porting                   344
 
-    application                         1668
+    application                         1690
       ws63                                  
         ws63_liteos_application             
-          main                                    1090
+          main                                    1112
           clock_init                               578
 
     kernel                              1804
@@ -456,11 +456,11 @@
   --------------------------------  --------  -----
 
 
-  .bth_text_flash                     273104
+  .bth_text_flash                     273124
 
     application                             
       samples                               
-        peripheral                    271268
+        peripheral                    271510
           spi_lcd                     267816
             chinese_font.h                        1280
             lcd_fonts                             4568
@@ -469,17 +469,14 @@
             prompt_image.h                         384
             spi_master_lcd                         876
 
-          INMP441                       3452
+          INMP441                       3694
             audiowebsocket                        1660
-            INMP441                               1116
-            wlan_hotspot                           676
+            INMP441                               1340
+            wlan_hotspot                           694
 
-        bt                              1836
-          sle                               
-            sle_speed_server                
-              src                           
-                sle_speed_server                  1478
-                sle_speed_server_adv               358
+        radar                           1614
+          sta_sample                        
+            radar_sta_sample                      1614
 
 
   Section                            Total     Size
@@ -487,22 +484,16 @@
   --------------------------------  --------  -----
 
 
-  startup                                344
+  startup                                340
 
-    application                          254
-      samples                             12
-        peripheral                         8
+    application                          250
+      samples                              8
+        peripheral                          
           INMP441                          4
             INMP441                                  4
 
           spi_lcd                          4
             spi_master_lcd                           4
-
-        bt                                 4
-          sle                               
-            sle_speed_server                
-              src                           
-                sle_speed_server                     4
 
       ws63                               242
         ws63_liteos_application             
@@ -520,7 +511,7 @@
   --------------------------------  --------  -----
 
 
-  .wifi_text_flash                    513125
+  .wifi_text_flash                    513257
 
     kernel                                62
       liteos                                
@@ -535,7 +526,7 @@
                 include                     
                   endian.h                          32
 
-    open_source                       204969
+    open_source                       205101
       wpa_supplicant                  115205
         src                            77495
           utils                         3030
@@ -642,11 +633,11 @@
           main_rtos                                550
           wpa_cli_rtos                             848
 
-      lwip                             89764
-        lwip_v2.1.3                    88636
+      lwip                             89896
+        lwip_v2.1.3                    88768
           src                               
-            api                        25720
-              sockets                             8262
+            api                        25852
+              sockets                             8394
               api_msg                             5028
               nettool                   8682
                 utility                            106
@@ -1334,12 +1325,17 @@
   --------------------------------  --------  -----
 
 
-  .text                                52427
+  .text                                64759
 
-    open_source                         1772
-      cjson                                 
+    open_source                        13140
+      cjson                             1772
         cjson                               
           cJSON                                   1772
+
+      littlefs                         11368
+        v2.5.0                              
+          lfs                                    11316
+          lfs_util                                  52
 
     drivers                            48503
       drivers                          47237
@@ -1503,8 +1499,8 @@
             spi                          192
               spi_porting                          192
 
-    middleware                          2152
-      utils                              488
+    middleware                          3116
+      utils                              490
         dfx                              252
           dfx_print                       24
             dfx_print                               24
@@ -1512,16 +1508,19 @@
           log_reader                     228
             log_uart                               228
 
-        partition                        236
-          partition                                236
+        partition                        238
+          partition                                238
 
-      chips                             1664
+      chips                             2626
         ws63                                
+          littlefs                       958
+            littlefs_adapt                         958
+
           mac_addr                       878
             mac_addr                               878
 
-          factory                        572
-            factory                                572
+          factory                        576
+            factory                                576
 
           partition                       20
             partition_porting                       20
@@ -1536,7 +1535,7 @@
   --------------------------------  --------  -----
 
 
-  .bss                                  5102
+  .bss                                  5239
 
     drivers                             4778
       chips                               52
@@ -1627,11 +1626,14 @@
 
             hal_spi                                  8
 
-    middleware                           316
-      chips                               36
+    middleware                           453
+      chips                              173
         ws63                                
-          mac_addr                          
+          mac_addr                        36
             mac_addr                                36
+
+          littlefs                       137
+            littlefs_adapt                         137
 
       utils                              280
         partition                        272
@@ -1645,31 +1647,6 @@
       cjson                                 
         cjson                               
           cJSON                                      8
-
-
-  Section                            Total     Size
-
-  --------------------------------  --------  -----
-
-
-  .bth_bss_flash                       66783
-
-    application                             
-      samples                               
-        bt                              1217
-          sle                               
-            sle_speed_server                
-              src                           
-                sle_speed_server                  1217
-
-        peripheral                     65566
-          spi_lcd                          8
-            spi_master_lcd                           8
-
-          INMP441                      65558
-            INMP441                              65549
-            audiowebsocket                           4
-            wlan_hotspot                             5
 
 
   Section                            Total     Size
@@ -1855,23 +1832,16 @@
   --------------------------------  --------  -----
 
 
-  .bth_data_flash                         60
+  .bth_data_flash                         16
 
     application                             
       samples                               
-        peripheral                        16
+        peripheral                          
           spi_lcd                         12
             spi_master_lcd                          12
 
           INMP441                          4
             audiowebsocket                           4
-
-        bt                                44
-          sle                               
-            sle_speed_server                
-              src                           
-                sle_speed_server_adv                28
-                sle_speed_server                    16
 
 
   Section                            Total     Size
@@ -1967,6 +1937,29 @@
   --------------------------------  --------  -----
 
 
+  .bth_bss_flash                       65577
+
+    application                             
+      samples                               
+        peripheral                     65566
+          spi_lcd                          8
+            spi_master_lcd                           8
+
+          INMP441                      65558
+            INMP441                              65549
+            audiowebsocket                           4
+            wlan_hotspot                             5
+
+        radar                             11
+          sta_sample                        
+            radar_sta_sample                        11
+
+
+  Section                            Total     Size
+
+  --------------------------------  --------  -----
+
+
   .preserve                              252
 
     middleware                              
@@ -2039,17 +2032,17 @@
 
   Mismatched section sizes...
 
-       startup  .lst file = 432 (0x1B0)
-                 .du file = 344 (0x158)
+       startup  .lst file = 428 (0x1AC)
+                 .du file = 340 (0x154)
 
-         .text  .lst file = 58444 (0xE44C)
-                 .du file = 52427 (0xCCCB)
+         .text  .lst file = 71592 (0x117A8)
+                 .du file = 64759 (0xFCF7)
 
-         .data  .lst file = 464 (0x1D0)
+         .data  .lst file = 552 (0x228)
                  .du file = 430 (0x1AE)
 
-          .bss  .lst file = 5180 (0x143C)
-                 .du file = 5102 (0x13EE)
+          .bss  .lst file = 5328 (0x14D0)
+                 .du file = 5239 (0x1477)
 
   ====================================================
 

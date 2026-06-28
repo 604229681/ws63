@@ -26,6 +26,8 @@
 #include "pinctrl.h"
 #include "securec.h"
 #include <string.h>
+#include "fcntl.h"
+#include "littlefs_adapt.h"
 
 // I2S配置参数
 #define I2S_DIV_NUMBER              16          // 16kHz
@@ -148,10 +150,70 @@ static void app_i2s_init(void)
     osal_printk("I2S Init: 2048 Frames (Words), Pins Confirmed.\r\n");
 }
 
+static void test_save_data_to_local(void)
+{
+    const char *test_path = "/test_local.txt";
+    const char *test_str = "Hello BearPi LittleFS! This data is saved locally on flash.\n";
+    char read_buf[64] = {0};
+    int fd;
+    int ret;
+
+    osal_printk("[LFS TEST] Starting local filesystem test...\r\n");
+
+    // Print Flash capacity and usage info
+    fs_adapt_print_info();
+
+    // Try deleting first if it exists to start fresh
+    fs_adapt_delete(test_path);
+
+    // Open file for writing (create if not exists)
+    fd = fs_adapt_open(test_path, O_RDWR | O_CREAT);
+    if (fd < 0) {
+        osal_printk("[LFS TEST] Failed to open file %s for writing, fd = %d\r\n", test_path, fd);
+        return;
+    }
+
+    ret = fs_adapt_write(fd, (char *)test_str, strlen(test_str));
+    if (ret < 0) {
+        osal_printk("[LFS TEST] Failed to write data to file, ret = %d\r\n", ret);
+        fs_adapt_close(fd);
+        return;
+    }
+    osal_printk("[LFS TEST] Successfully wrote %d bytes to %s\r\n", ret, test_path);
+
+    // Sync to flash
+    fs_adapt_sync(fd);
+
+    // Close the file
+    fs_adapt_close(fd);
+
+    // Reopen for reading
+    fd = fs_adapt_open(test_path, O_RDONLY);
+    if (fd < 0) {
+        osal_printk("[LFS TEST] Failed to open file %s for reading, fd = %d\r\n", test_path, fd);
+        return;
+    }
+
+    ret = fs_adapt_read(fd, read_buf, sizeof(read_buf) - 1);
+    if (ret < 0) {
+        osal_printk("[LFS TEST] Failed to read data from file, ret = %d\r\n", ret);
+        fs_adapt_close(fd);
+        return;
+    }
+    read_buf[ret] = '\0';
+    osal_printk("[LFS TEST] Successfully read %d bytes from %s: \r\n--> %s\r\n", ret, test_path, read_buf);
+
+    fs_adapt_close(fd);
+    osal_printk("[LFS TEST] Local filesystem test completed successfully!\r\n");
+}
+
 static void *i2s_audio_task(const char *arg)
 {
     unused(arg);
     osal_printk("I2S Audio Task Start\r\n");
+    
+    // Run the local filesystem test
+    test_save_data_to_local();
 
 #if defined(CONFIG_I2S_SUPPORT_DMA)
     uapi_dma_deinit();

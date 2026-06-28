@@ -194,6 +194,7 @@ application/ws63/ws63_liteos_application/CMakeFiles/ws63_liteos_app.dir/main.c.o
  /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/update/common/../include/upg_definitions_porting.h \
  /home/hb/bearpi/fbb_ws63/src/include/driver/security_unified/cipher.h \
  /home/hb/bearpi/fbb_ws63/src/middleware/utils/nv/nv_storage_lib/nv_upg.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/littlefs/littlefs_adapt.h \
  /home/hb/bearpi/fbb_ws63/src/include/driver/pinctrl.h \
  /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/rom/drivers/chips/ws63/porting/pinctrl/pinctrl_porting.h \
  /home/hb/bearpi/fbb_ws63/src/drivers/chips/ws63/include/platform_core_rom.h \

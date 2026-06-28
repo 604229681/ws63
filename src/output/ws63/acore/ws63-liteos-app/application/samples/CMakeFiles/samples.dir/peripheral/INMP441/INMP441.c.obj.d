@@ -148,4 +148,5 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/INMP441.c.obj: \
  /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/lib/liteos_libc/include/semaphore_adapt.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/lock/osal_mutex.h \
  /home/hb/bearpi/fbb_ws63/src/kernel/osal/include/schedule/osal_wait.h \
- /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/time.h
+ /home/hb/bearpi/fbb_ws63/src/kernel/liteos/liteos_v208.5.0/Huawei_LiteOS/open_source/musl/include/time.h \
+ /home/hb/bearpi/fbb_ws63/src/middleware/chips/ws63/littlefs/littlefs_adapt.h

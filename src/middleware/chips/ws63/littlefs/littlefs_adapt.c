@@ -426,6 +426,24 @@ void lfs_test(void)
     }
 }
 
+void fs_adapt_print_info(void)
+{
+    lfs_ssize_t used_blocks = lfs_fs_size(&g_lfs);
+    if (used_blocks < 0) {
+        osal_printk("[LFS INFO] Failed to get filesystem size info, err = %d\r\n", (int)used_blocks);
+        return;
+    }
+    uint32_t block_size = g_lfs.cfg->block_size;
+    uint32_t total_blocks = g_lfs.cfg->block_count;
+    uint32_t total_bytes = total_blocks * block_size;
+    uint32_t used_bytes = (uint32_t)used_blocks * block_size;
+    uint32_t free_bytes = total_bytes - used_bytes;
+
+    osal_printk("[LFS_FLASH_INFO] TOTAL_SIZE: %u Bytes (%u KB)\r\n", total_bytes, total_bytes / 1024);
+    osal_printk("[LFS_FLASH_INFO] USED_SIZE: %u Bytes (%u KB)\r\n", used_bytes, used_bytes / 1024);
+    osal_printk("[LFS_FLASH_INFO] FREE_SIZE: %u Bytes (%u KB)\r\n", free_bytes, free_bytes / 1024);
+}
+
 #ifdef CONFIG_LFS_SUPPORT_POSIX
 int open(const char *path, int oflags, ...)
 {

@@ -90,6 +90,8 @@ target = {
             "sle_netdev",
             "mqtt",
             "opus",
+            "little_fs",
+            "littlefs_adapt_ws63",
         ],
         'ccflags': [
             "-DBOARD_ASIC", '-DPRE_ASIC',

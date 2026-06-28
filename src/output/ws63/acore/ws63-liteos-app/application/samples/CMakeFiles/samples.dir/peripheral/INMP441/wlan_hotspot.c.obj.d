@@ -18,6 +18,7 @@ application/samples/CMakeFiles/samples.dir/peripheral/INMP441/wlan_hotspot.c.obj
  /home/hb/bearpi/fbb_ws63/src/include/middleware/services/wifi/plat_device.h \
  /home/hb/bearpi/fbb_ws63/src/include/middleware/services/wifi/wifi_hotspot_config.h \
  /home/hb/bearpi/fbb_ws63/src/include/middleware/services/wifi/wifi_hotspot_config.h \
+ /home/hb/bearpi/fbb_ws63/src/include/middleware/services/wifi/wifi_device.h \
  /home/hb/bearpi/fbb_ws63/src/open_source/lwip/lwip_v2.1.3/src/include/lwip/netifapi.h \
  /home/hb/bearpi/fbb_ws63/src/open_source/lwip/lwip_v2.1.3/src/include/lwip/opt.h \
  /home/hb/bearpi/fbb_ws63/src/open_source/lwip/lwip_adapter/liteos_207/src/include/lwip/lwipopts_default.h \

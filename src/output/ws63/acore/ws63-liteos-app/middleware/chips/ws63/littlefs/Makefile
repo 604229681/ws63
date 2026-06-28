@@ -116,6 +116,44 @@ depend:
 	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/rule:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/rule
+.PHONY : middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/rule
+
+# Convenience name for target.
+littlefs_adapt_ws63: middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/rule
+.PHONY : littlefs_adapt_ws63
+
+# fast build rule for target.
+littlefs_adapt_ws63/fast:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build.make middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build
+.PHONY : littlefs_adapt_ws63/fast
+
+littlefs_adapt.obj: littlefs_adapt.c.obj
+.PHONY : littlefs_adapt.obj
+
+# target to build an object file
+littlefs_adapt.c.obj:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build.make middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/littlefs_adapt.c.obj
+.PHONY : littlefs_adapt.c.obj
+
+littlefs_adapt.i: littlefs_adapt.c.i
+.PHONY : littlefs_adapt.i
+
+# target to preprocess a source file
+littlefs_adapt.c.i:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build.make middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/littlefs_adapt.c.i
+.PHONY : littlefs_adapt.c.i
+
+littlefs_adapt.s: littlefs_adapt.c.s
+.PHONY : littlefs_adapt.s
+
+# target to generate assembly for a file
+littlefs_adapt.c.s:
+	cd /home/hb/bearpi/fbb_ws63/src/output/ws63/acore/ws63-liteos-app && $(MAKE) $(MAKESILENT) -f middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/build.make middleware/chips/ws63/littlefs/CMakeFiles/littlefs_adapt_ws63.dir/littlefs_adapt.c.s
+.PHONY : littlefs_adapt.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... littlefs_adapt_ws63"
+	@echo "... littlefs_adapt.obj"
+	@echo "... littlefs_adapt.i"
+	@echo "... littlefs_adapt.s"
 .PHONY : help
 
 

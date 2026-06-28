@@ -1,6 +1,7 @@
 #include "wlan_hotspot.h"
 #include "wifi_hotspot.h"
 #include "wifi_hotspot_config.h"
+#include "wifi_device.h"
 #include "lwip/netifapi.h"
 #include "td_base.h"
 #include "td_type.h"
@@ -215,6 +216,8 @@ int wifi_connect_to_hotspot(void)
 
     if (g_wifi_connected) {
         osal_printk("[WiFi] Successfully connected and got IP!\r\n");
+        errcode_t pm_ret = wifi_sta_set_pm(0);
+        osal_printk("[WiFi] Disable power save ret: %d\r\n", pm_ret);
         return 0;
     }
 
